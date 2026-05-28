@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset
+  xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+  xmlns:xhtml="http://www.w3.org/1999/xhtml">
+
+  <url>
+    <loc>https://getnexsource.com/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://getnexsource.com/" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://getnexsource.com/de/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://getnexsource.com/" />
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+  </url>
+
+  <url>
+    <loc>https://getnexsource.com/de/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://getnexsource.com/" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://getnexsource.com/de/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://getnexsource.com/" />
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+  </url>
+
+  <url>
+    <loc>https://getnexsource.com/imprint.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://getnexsource.com/imprint.html" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://getnexsource.com/de/impressum.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://getnexsource.com/imprint.html" />
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
+  </url>
+
+  <url>
+    <loc>https://getnexsource.com/de/impressum.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://getnexsource.com/imprint.html" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://getnexsource.com/de/impressum.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://getnexsource.com/imprint.html" />
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
+  </url>
+
+  <url>
+    <loc>https://getnexsource.com/privacy.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://getnexsource.com/privacy.html" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://getnexsource.com/de/datenschutz.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://getnexsource.com/privacy.html" />
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
+  </url>
+
+  <url>
+    <loc>https://getnexsource.com/de/datenschutz.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://getnexsource.com/privacy.html" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://getnexsource.com/de/datenschutz.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://getnexsource.com/privacy.html" />
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
+  </url>
+
+  <url>
+    <loc>https://getnexsource.com/terms.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://getnexsource.com/terms.html" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://getnexsource.com/de/agb.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://getnexsource.com/terms.html" />
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
+  </url>
+
+  <url>
+    <loc>https://getnexsource.com/de/agb.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://getnexsource.com/terms.html" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://getnexsource.com/de/agb.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://getnexsource.com/terms.html" />
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
+  </url>
+
+</urlset>
