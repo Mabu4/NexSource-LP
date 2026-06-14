@@ -3,10 +3,14 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>nexsource — Lieferantenmanagement, einfach gemacht</title>
+    <title>NexSource – Lieferantenmanagement & Einkaufssoftware für den Mittelstand</title>
     <meta
       name="description"
-      content="nexsource ist eine moderne Software für Lieferantenmanagement. Verwalten Sie Lieferanten, Verträge, Zertifikate und Dokumente an einem Ort."
+      content="Lieferanten finden, prüfen, verwalten und bestellen – in einer Plattform. KI-Lieferantensuche mit VIES- & Sanktionslistenprüfung, Bestellungen, Verträge, Zertifikate und Lieferantenportal. Einkaufssoftware für den Mittelstand. 14 Tage kostenlos testen."
+    />
+    <meta
+      name="keywords"
+      content="Lieferantenmanagement Software, Einkaufssoftware, Beschaffungssoftware, Lieferantenportal, Lieferantenbewertung, Bestellsoftware, Sanktionslistenprüfung, LkSG Software, SRM Software Mittelstand, Einkaufssoftware KMU"
     />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -14,6 +18,9 @@
       href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
       rel="stylesheet"
     />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="apple-touch-icon" href="/favicon.svg" />
+    <meta name="theme-color" content="#4f46e5" />
     <link rel="canonical" href="https://getnexsource.com/de/" />
     <link rel="alternate" hreflang="en" href="https://getnexsource.com/" />
     <link rel="alternate" hreflang="de" href="https://getnexsource.com/de/" />
@@ -23,20 +30,21 @@
   <body>
     <header class="nav">
       <div class="container nav-inner">
-        <a href="/de/" class="brand" aria-label="nexsource Startseite">
+        <a href="/de/" class="brand" aria-label="NexSource Startseite">
           <span class="brand-mark" aria-hidden="true"></span>
           <span class="brand-name">nexsource</span>
         </a>
         <nav class="nav-links" aria-label="Hauptnavigation">
+          <a href="#research">KI-Lieferantensuche</a>
           <a href="#features">Funktionen</a>
-          <a href="#how">So funktioniert's</a>
+          <a href="#compliance">Compliance</a>
           <a href="#pricing">Preise</a>
           <a href="#faq">FAQ</a>
         </nav>
         <div class="nav-cta">
           <a href="/" class="lang-switch" hreflang="en" aria-label="English">EN</a>
           <a href="https://app.getnexsource.com" class="btn btn-ghost">Anmelden</a>
-          <a href="https://app.getnexsource.com" class="btn btn-primary">Jetzt starten</a>
+          <a href="https://app.getnexsource.com" class="btn btn-primary">Kostenlos testen</a>
         </div>
         <button class="nav-toggle" aria-label="Menü öffnen" aria-expanded="false">
           <span></span><span></span><span></span>
@@ -45,21 +53,23 @@
     </header>
 
     <main>
+      <!-- HERO -->
       <section class="hero">
         <div class="container hero-inner">
           <div class="hero-copy">
-            <span class="eyebrow">Lieferantenmanagement, einfach gemacht</span>
+            <span class="eyebrow">Lieferantenmanagement & Einkauf für den Mittelstand</span>
             <h1>
-              Alle Lieferanten, Verträge und Zertifikate —
-              <span class="grad">an einem Ort.</span>
+              Lieferanten finden, prüfen, verwalten und
+              <span class="grad">bestellen.</span>
             </h1>
             <p class="lead">
-              nexsource ist die zentrale Plattform für Einkauf und Qualitätssicherung.
-              Behalten Sie alle Lieferantendaten, Dokumente und Fristen im Blick — und verpassen Sie nie wieder eine Verlängerung.
+              NexSource ist die All-in-one-Einkaufssoftware für Mittelstand und KMU:
+              Lieferantenstammdaten, Bestellungen, Verträge, Compliance-Prüfung und ein
+              eigenes Lieferantenportal — in einer Plattform. Ohne IT-Projekt, ohne Excel-Chaos.
             </p>
             <div class="hero-cta">
               <a href="https://app.getnexsource.com" class="btn btn-primary btn-lg">
-                Kostenlos testen
+                14 Tage kostenlos testen
                 <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true">
                   <path d="M5 12h14M13 6l6 6-6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" fill="none" />
                 </svg>
@@ -67,9 +77,10 @@
               <a href="#pricing" class="btn btn-secondary btn-lg">Preise ansehen</a>
             </div>
             <ul class="hero-meta">
+              <li>14 Tage kostenlos</li>
               <li>Keine Kreditkarte nötig</li>
-              <li>EU-Hosting</li>
-              <li>Unbegrenzt Nutzer</li>
+              <li>In Minuten startklar</li>
+              <li>EU-Hosting, DSGVO-konform</li>
             </ul>
           </div>
 
@@ -84,9 +95,8 @@
                   <div class="mock-logo"></div>
                   <div class="mock-nav-item active">Dashboard</div>
                   <div class="mock-nav-item">Lieferanten</div>
-                  <div class="mock-nav-item">Verträge</div>
-                  <div class="mock-nav-item">Zertifikate</div>
-                  <div class="mock-nav-item">Dokumente</div>
+                  <div class="mock-nav-item">Bestellungen</div>
+                  <div class="mock-nav-item">Freigaben</div>
                   <div class="mock-nav-item">Einstellungen</div>
                 </div>
                 <div class="mock-main">
@@ -97,9 +107,9 @@
                       <span class="mock-stat-trend up">+6 diesen Monat</span>
                     </div>
                     <div class="mock-stat">
-                      <span class="mock-stat-label">Aktive Verträge</span>
-                      <span class="mock-stat-value">94</span>
-                      <span class="mock-stat-trend">7 laufen aus</span>
+                      <span class="mock-stat-label">Offene Bestellungen</span>
+                      <span class="mock-stat-value">17</span>
+                      <span class="mock-stat-trend">3 zur Freigabe</span>
                     </div>
                     <div class="mock-stat highlight">
                       <span class="mock-stat-label">Zertifikate</span>
@@ -109,19 +119,19 @@
                   </div>
                   <div class="mock-table">
                     <div class="mock-row head">
-                      <span>Lieferant</span><span>Status</span><span>Verlängerung</span>
+                      <span>Lieferant</span><span>Status</span><span>Bestell-Nr.</span>
                     </div>
                     <div class="mock-row">
-                      <span>Müller GmbH</span><span class="pill ok">Aktiv</span><span>14. Jun</span>
+                      <span>Müller GmbH</span><span class="pill ok">Bezahlt</span><span>ORD-2026-0042</span>
                     </div>
                     <div class="mock-row">
-                      <span>Atlas Logistik</span><span class="pill warn">Prüfen</span><span>22. Jun</span>
+                      <span>Atlas Logistik</span><span class="pill warn">Freigabe</span><span>ORD-2026-0041</span>
                     </div>
                     <div class="mock-row">
-                      <span>Nordic Steel AB</span><span class="pill ok">Aktiv</span><span>03. Jul</span>
+                      <span>Nordic Steel AB</span><span class="pill ok">Versendet</span><span>ORD-2026-0040</span>
                     </div>
                     <div class="mock-row">
-                      <span>Vega Components</span><span class="pill ok">Aktiv</span><span>18. Jul</span>
+                      <span>Vega Components</span><span class="pill ok">Geliefert</span><span>ORD-2026-0039</span>
                     </div>
                   </div>
                 </div>
@@ -133,27 +143,124 @@
         </div>
       </section>
 
+      <!-- TRUST STRIP -->
       <section class="trust">
         <div class="container">
-          <p class="trust-label">Entwickelt für moderne Einkaufs- und QM-Teams</p>
+          <p class="trust-label">Für Einkauf, Qualitätssicherung und Compliance im Mittelstand</p>
           <div class="trust-row">
-            <span>ISO&nbsp;9001 ready</span>
+            <span>Made in Germany</span>
             <span>DSGVO-konform</span>
-            <span>EU-Datenspeicherung</span>
-            <span>SSL standardmäßig</span>
-            <span>Stripe-Abrechnung</span>
+            <span>EU-Hosting</span>
+            <span>LkSG-ready</span>
+            <span>Sanktionslisten-Check</span>
+            <span>USt-IdNr-Prüfung (VIES)</span>
           </div>
         </div>
       </section>
 
+      <!-- SPOTLIGHT 1: KI-LIEFERANTENSUCHE -->
+      <section id="research" class="section split">
+        <div class="container split-inner">
+          <div class="split-copy">
+            <span class="eyebrow">KI-Lieferantensuche</span>
+            <h2>Neue Lieferanten finden — automatisch geprüft.</h2>
+            <p class="lead">
+              Beschreiben Sie in einem Satz, was Sie brauchen. NexSource durchsucht das Web,
+              findet passende Lieferanten und prüft jeden einzelnen — Bonität, USt-IdNr und
+              Sanktionslisten inklusive. Sourcing, das früher Tage gekostet hat, in Minuten.
+            </p>
+            <ul class="checks">
+              <li>Klartext-Suche statt Lieferantenportal-Recherche: „Bio-Apfelerzeuger in Sachsen-Anhalt, IFS-zertifiziert, ab 500 t/Jahr"</li>
+              <li>Automatische USt-IdNr-Prüfung über das EU-VIES-System</li>
+              <li>Sanktionslisten-Screening gegen EU-, OFAC- und UN-Listen</li>
+              <li>Trust-Score von 0–100 mit Risikoeinstufung und Onboarding-Empfehlung</li>
+              <li>Passende Treffer mit einem Klick als Lieferant übernehmen</li>
+            </ul>
+            <a href="https://app.getnexsource.com" class="btn btn-primary">Lieferantensuche starten</a>
+          </div>
+          <div class="split-media">
+            <div class="demo-card">
+              <div class="demo-head">
+                <div>
+                  <div class="demo-title">Nordwald Bio GmbH</div>
+                  <div class="demo-sub">Quedlinburg, Deutschland · nordwald-bio.de</div>
+                </div>
+                <div class="score">92<small>Trust</small></div>
+              </div>
+              <div class="demo-line">
+                <span class="label">USt-IdNr. (VIES)</span>
+                <span class="tag ok">Gültig geprüft</span>
+              </div>
+              <div class="demo-line">
+                <span class="label">Sanktionslisten</span>
+                <span class="tag ok">Kein Treffer</span>
+              </div>
+              <div class="demo-line">
+                <span class="label">Zertifizierung</span>
+                <span class="tag muted">IFS Food · Bio (DE-ÖKO-006)</span>
+              </div>
+              <div class="demo-line">
+                <span class="label">Empfehlung</span>
+                <span class="tag ok">Onboarding empfohlen</span>
+              </div>
+            </div>
+            <div class="blob blob-a"></div>
+          </div>
+        </div>
+      </section>
+
+      <!-- SPOTLIGHT 2: BESTELLUNGEN & FREIGABEN -->
+      <section id="orders" class="section split section-alt reverse">
+        <div class="container split-inner">
+          <div class="split-copy">
+            <span class="eyebrow">Bestellungen & Freigaben</span>
+            <h2>Vom Bedarf bis zur Zahlung — ein klarer Bestellprozess.</h2>
+            <p class="lead">
+              Erstellen Sie Bestellungen, holen Sie die interne Freigabe ein und verfolgen Sie
+              jeden Schritt — bis zur Zahlung. Mit automatischer Bestellnummer, Freigabe-Workflow
+              und Status-Historie, die jeden Vorgang prüfungssicher dokumentiert.
+            </p>
+            <ul class="checks">
+              <li>Automatische Bestellnummern (ORD-2026-0042) je Organisation</li>
+              <li>Interne Freigabe durch Owner oder Manager vor dem Versand</li>
+              <li>Lieferant nimmt an, versendet und liefert direkt über das Portal</li>
+              <li>Lückenlose Status-Historie von „Warten auf Freigabe" bis „Bezahlt"</li>
+              <li>Zahlungsziele je Lieferant & automatische Zahlungserinnerungen</li>
+            </ul>
+            <a href="https://app.getnexsource.com" class="btn btn-primary">Bestellprozess ansehen</a>
+          </div>
+          <div class="split-media">
+            <div class="demo-card">
+              <div class="demo-head">
+                <div>
+                  <div class="demo-title">Bestellung ORD-2026-0042</div>
+                  <div class="demo-sub">Müller GmbH · 1.480,00 € · Zahlungsziel 14 Tage</div>
+                </div>
+                <span class="tag ok">Versendet</span>
+              </div>
+              <div class="flow">
+                <div class="flow-step"><span class="flow-dot"></span>Erstellt<span class="who">Einkauf</span></div>
+                <div class="flow-step"><span class="flow-dot"></span>Intern freigegeben<span class="who">Manager</span></div>
+                <div class="flow-step"><span class="flow-dot"></span>Vom Lieferant angenommen<span class="who">Lieferant</span></div>
+                <div class="flow-step"><span class="flow-dot active"></span>Versendet<span class="who">Lieferant</span></div>
+                <div class="flow-step muted"><span class="flow-dot pending"></span>Geliefert<span class="who">offen</span></div>
+                <div class="flow-step muted"><span class="flow-dot pending"></span>Bezahlt<span class="who">offen</span></div>
+              </div>
+            </div>
+            <div class="blob blob-b"></div>
+          </div>
+        </div>
+      </section>
+
+      <!-- FEATURES -->
       <section id="features" class="section">
         <div class="container">
           <div class="section-head">
             <span class="eyebrow">Funktionen</span>
-            <h2>Alles, was Ihr Lieferantenstamm braucht.</h2>
+            <h2>Alles für Ihren Lieferantenstamm — in einem Tool.</h2>
             <p>
-              Vom ersten Onboarding bis zur nächsten Verlängerung — verwalten Sie den gesamten
-              Lebenszyklus Ihrer Lieferanten ohne den Tab zu wechseln.
+              Vom Lieferanten-Onboarding über Bewertung und Verträge bis zur Bestellung:
+              NexSource bündelt den gesamten Einkaufs- und Lieferantenprozess.
             </p>
           </div>
 
@@ -162,87 +269,122 @@
               <div class="feature-icon">
                 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
               </div>
-              <h3>Lieferantenverzeichnis</h3>
-              <p>Eine zentrale Datenbank für Kontakte, Adressen, Status und Notizen — durchsuch- und filterbar in Sekunden.</p>
+              <h3>Lieferantenstammdaten</h3>
+              <p>Eine zentrale Lieferantendatenbank für Kontakte, Adressen, USt-IdNr, Zahlungsziele und Status — durchsuch- und filterbar in Sekunden.</p>
             </article>
 
             <article class="feature">
               <div class="feature-icon">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><path d="M14 2v6h6"/><path d="M9 13h6M9 17h6"/></svg>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="11" width="18" height="11" rx="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
               </div>
-              <h3>Verträge</h3>
-              <p>Speichern Sie Verträge mit Laufzeiten und erhalten Sie Hinweise, bevor sie ablaufen. Keine Verlängerung mehr verpasst.</p>
+              <h3>Lieferantenportal</h3>
+              <p>Lieferanten pflegen ihre Stammdaten selbst per sicherem Link — ohne eigenen Account. Jede Änderung kommt erst nach Ihrer Freigabe ins System.</p>
             </article>
 
             <article class="feature">
               <div class="feature-icon">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="6"/><path d="M15.5 13l1.5 8-5-3-5 3 1.5-8"/></svg>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2l2.4 6.9H21l-5.3 4 2 6.9L12 16l-5.7 3.8 2-6.9L3 8.9h6.6z"/></svg>
               </div>
-              <h3>Zertifikate</h3>
-              <p>Verfolgen Sie ISO-, Qualitäts- und Compliance-Zertifikate je Lieferant. Warnungen bei 30, 60 und 90 Tagen Restlaufzeit.</p>
+              <h3>Lieferantenbewertung & Scorecard</h3>
+              <p>Bewerten Sie Kommunikation, Zuverlässigkeit, Flexibilität, Zusammenarbeit und Problemlösung auf einer Skala von 1–10 — mit Gesamt-Score je Lieferant.</p>
             </article>
 
             <article class="feature">
               <div class="feature-icon">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/><path d="M3.27 6.96 12 12.01l8.73-5.05M12 22.08V12"/></svg>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><path d="M14 2v6h6"/><path d="M9 15l2 2 4-4"/></svg>
               </div>
-              <h3>Materialien</h3>
-              <p>Katalog aller Artikel je Lieferant, inklusive Einheiten und Preise — perfekt vorbereitet für jede Einkaufsverhandlung.</p>
+              <h3>Verträge & Zertifikate</h3>
+              <p>Verträge und Zertifikate (ISO, IFS, BRC, Bio) mit Laufzeiten verwalten. Automatische Ablauf-Warnungen bei 30, 60 und 90 Tagen Restlaufzeit.</p>
             </article>
 
             <article class="feature">
               <div class="feature-icon">
                 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M13 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V9z"/><path d="M13 2v7h7"/></svg>
               </div>
-              <h3>Dokumente</h3>
-              <p>Laden Sie alle relevanten Dateien hoch — sicher, je Lieferant geordnet, jederzeit für Ihr Team zugänglich.</p>
+              <h3>Dokumentenmanagement</h3>
+              <p>Alle Lieferantendokumente sicher und geordnet an einem Ort — je Lieferant, EU-gehostet und jederzeit für Ihr Team verfügbar.</p>
             </article>
 
             <article class="feature">
               <div class="feature-icon">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 3v18h18"/><path d="M7 14l4-4 4 3 5-6"/></svg>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
               </div>
-              <h3>Dashboard &amp; Warnungen</h3>
-              <p>Sehen Sie den Zustand Ihres Lieferantenstamms auf einen Blick — Ablaufdaten, neue Lieferanten, letzte Aktivitäten.</p>
+              <h3>Team, Rollen & Dashboard</h3>
+              <p>Unbegrenzte Nutzer mit Rollen (Owner, Manager, Mitglied). Das Dashboard zeigt offene Freigaben, ablaufende Dokumente und Aktivitäten auf einen Blick.</p>
             </article>
           </div>
         </div>
       </section>
 
-      <section id="how" class="section section-alt">
+      <!-- COMPLIANCE -->
+      <section id="compliance" class="section section-alt">
+        <div class="container">
+          <div class="section-head">
+            <span class="eyebrow">Compliance</span>
+            <h2>Compliance, die mitläuft — ohne Mehraufwand.</h2>
+            <p>
+              Lieferkettengesetz, Sanktionen, USt-IdNr und Zertifikate: NexSource prüft und
+              dokumentiert automatisch, damit Sie bei jedem Audit auf der sicheren Seite sind.
+            </p>
+          </div>
+
+          <div class="grid-4">
+            <article class="feature">
+              <h3>LkSG-ready</h3>
+              <p>Lieferanten-Sorgfaltspflichten dokumentieren — relevant, sobald große Kunden Ihre Lieferkette prüfen.</p>
+            </article>
+            <article class="feature">
+              <h3>Sanktionslisten-Screening</h3>
+              <p>Automatischer Abgleich gegen EU-, OFAC- und UN-Sanktionslisten bei jeder Lieferantensuche.</p>
+            </article>
+            <article class="feature">
+              <h3>USt-IdNr-Prüfung (VIES)</h3>
+              <p>EU-Umsatzsteuer-IDs werden direkt über das offizielle VIES-System validiert.</p>
+            </article>
+            <article class="feature">
+              <h3>Auditsicher</h3>
+              <p>Zertifikate, Verträge und Freigaben lückenlos dokumentiert — mit vollständiger Status-Historie.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- HOW IT WORKS -->
+      <section id="how" class="section">
         <div class="container">
           <div class="section-head">
             <span class="eyebrow">So funktioniert's</span>
-            <h2>An einem Nachmittag einsatzbereit.</h2>
-            <p>Keine Einführungsprojekte. Keine Berater. Registrieren, Lieferanten hinzufügen — loslegen.</p>
+            <h2>In Minuten startklar — kein IT-Projekt.</h2>
+            <p>Keine Einführungsprojekte, keine Berater. Registrieren, Lieferanten anlegen, bestellen.</p>
           </div>
 
           <ol class="steps">
             <li>
               <span class="step-num">01</span>
               <h3>Workspace anlegen</h3>
-              <p>Mit E-Mail registrieren und Team einladen. Unbegrenzte Nutzer in jedem Tarif.</p>
+              <p>Mit E-Mail registrieren und Team einladen. Unbegrenzte Nutzer mit Rollen in jedem Tarif.</p>
             </li>
             <li>
               <span class="step-num">02</span>
-              <h3>Lieferanten hinzufügen</h3>
-              <p>Einzeln oder in Masse anlegen. Verträge, Zertifikate und Dokumente je Lieferant hochladen.</p>
+              <h3>Lieferanten finden & anlegen</h3>
+              <p>Bestehende Lieferanten erfassen oder per KI-Suche neue finden — inklusive automatischer Prüfung.</p>
             </li>
             <li>
               <span class="step-num">03</span>
-              <h3>Fristen im Griff</h3>
-              <p>Ihr Dashboard zeigt, was demnächst abläuft — damit das nächste Audit Sie nicht überrascht.</p>
+              <h3>Bestellen & im Griff behalten</h3>
+              <p>Bestellungen freigeben, Fristen überwachen und jeden Vorgang prüfungssicher dokumentieren.</p>
             </li>
           </ol>
         </div>
       </section>
 
-      <section id="pricing" class="section">
+      <!-- PRICING -->
+      <section id="pricing" class="section section-alt">
         <div class="container">
           <div class="section-head">
             <span class="eyebrow">Preise</span>
-            <h2>Klare Tarife. Unbegrenzte Nutzer.</h2>
-            <p>Wählen Sie Ihren Tarif nach Anzahl der Lieferanten. Tarifwechsel jederzeit möglich.</p>
+            <h2>Transparente Preise. Unbegrenzte Nutzer.</h2>
+            <p>Tarif nach Anzahl Ihrer Lieferanten wählen. 14 Tage kostenlos testen, keine Demo-Pflicht, jederzeit kündbar.</p>
           </div>
 
           <div class="pricing-grid">
@@ -257,12 +399,13 @@
               </div>
               <ul class="plan-features">
                 <li>Bis zu 25 Lieferanten</li>
-                <li>Unbegrenzte Nutzer</li>
-                <li>Verträge &amp; Zertifikate</li>
-                <li>Dokumentenablage</li>
-                <li>Ablauf-Warnungen</li>
+                <li>Unbegrenzte Nutzer & Rollen</li>
+                <li>Bestellungen & Freigaben</li>
+                <li>Verträge, Zertifikate & Dokumente</li>
+                <li>Lieferantenportal & Scorecard</li>
+                <li>5 KI-Lieferantensuchen / Monat</li>
               </ul>
-              <a href="https://app.getnexsource.com" class="btn btn-secondary btn-block">Mit Starter beginnen</a>
+              <a href="https://app.getnexsource.com" class="btn btn-secondary btn-block">14 Tage kostenlos testen</a>
             </article>
 
             <article class="plan featured">
@@ -277,12 +420,12 @@
               </div>
               <ul class="plan-features">
                 <li>Bis zu 150 Lieferanten</li>
-                <li>Unbegrenzte Nutzer</li>
                 <li>Alles aus Starter</li>
+                <li>Ablauf-Benachrichtigungen</li>
+                <li>20 KI-Lieferantensuchen / Monat</li>
                 <li>Prioritäts-Support per E-Mail</li>
-                <li>Erweiterte Dashboard-KPIs</li>
               </ul>
-              <a href="https://app.getnexsource.com" class="btn btn-primary btn-block">Pro wählen</a>
+              <a href="https://app.getnexsource.com" class="btn btn-primary btn-block">14 Tage kostenlos testen</a>
             </article>
 
             <article class="plan">
@@ -296,22 +439,24 @@
               </div>
               <ul class="plan-features">
                 <li>Unbegrenzte Lieferanten</li>
-                <li>Unbegrenzte Nutzer</li>
                 <li>Alles aus Pro</li>
+                <li>50 KI-Lieferantensuchen / Monat</li>
                 <li>Persönliches Onboarding</li>
                 <li>SLA auf Anfrage</li>
               </ul>
-              <a href="https://app.getnexsource.com" class="btn btn-secondary btn-block">Scale wählen</a>
+              <a href="https://app.getnexsource.com" class="btn btn-secondary btn-block">14 Tage kostenlos testen</a>
             </article>
           </div>
 
           <p class="pricing-note">
-            Alle Preise in EUR, zzgl. gesetzlicher USt. Monatliche Abrechnung über Stripe. Jederzeit kündbar.
+            Alle Preise in EUR, zzgl. gesetzlicher USt. 14 Tage kostenlos testen, keine Kreditkarte nötig.
+            Monatliche Abrechnung über Stripe. Jederzeit kündbar.
           </p>
         </div>
       </section>
 
-      <section id="faq" class="section section-alt">
+      <!-- FAQ -->
+      <section id="faq" class="section">
         <div class="container faq-container">
           <div class="section-head">
             <span class="eyebrow">FAQ</span>
@@ -321,19 +466,27 @@
           <div class="faq">
             <details>
               <summary>Gibt es eine kostenlose Testphase?</summary>
-              <p>Ja. Sie können einen Account erstellen und nexsource testen, bevor Sie eine Zahlungsmethode hinterlegen. Upgrade jederzeit möglich.</p>
+              <p>Ja. Jeder Tarif startet mit 14 Tagen kostenlos — ohne Risiko und ohne Kreditkarte nötig. Sie zahlen erst, wenn Sie sich für einen Tarif entscheiden.</p>
+            </details>
+            <details>
+              <summary>Wie funktioniert die KI-Lieferantensuche?</summary>
+              <p>Sie beschreiben in einem Satz, welchen Lieferanten Sie suchen. NexSource durchsucht das Web, schlägt passende Lieferanten vor und prüft jeden automatisch: USt-IdNr über VIES, Sanktionslisten (EU/OFAC/UN) sowie weitere Vertrauenssignale — zusammengefasst in einem Trust-Score von 0–100. Passende Treffer übernehmen Sie mit einem Klick als Lieferant.</p>
+            </details>
+            <details>
+              <summary>Können sich Lieferanten selbst einbringen?</summary>
+              <p>Ja. Über das Lieferantenportal erhalten Ihre Lieferanten einen sicheren Self-Service-Link — ganz ohne eigenen Account. Sie aktualisieren dort ihre Stammdaten und bestätigen Bestellungen. Alle Änderungen landen als Freigabe-Anfrage bei Ihnen; nichts ändert sich ungeprüft.</p>
+            </details>
+            <details>
+              <summary>Unterstützt NexSource das Lieferkettengesetz (LkSG)?</summary>
+              <p>NexSource hilft Ihnen, Sorgfaltspflichten zu dokumentieren: automatisches Sanktionslisten-Screening, USt-IdNr-Prüfung, Zertifikatsverwaltung und eine lückenlose Status-Historie. Das ist besonders relevant, wenn große Kunden Ihre Lieferkette prüfen und Nachweise verlangen.</p>
             </details>
             <details>
               <summary>Wie sind die Tarife limitiert?</summary>
-              <p>Die Tarife sind nach Anzahl Ihrer Lieferanten gestaffelt — nicht nach Nutzern. Jeder Tarif enthält unbegrenzte Nutzer.</p>
+              <p>Die Tarife sind nach Anzahl Ihrer Lieferanten und KI-Suchen pro Monat gestaffelt — nicht nach Nutzern. Jeder Tarif enthält unbegrenzte Nutzer mit Rollen (Owner, Manager, Mitglied).</p>
             </details>
             <details>
               <summary>Wo werden meine Daten gespeichert?</summary>
-              <p>nexsource läuft auf der EU-Infrastruktur von Cloudflare inklusive Objektspeicher für Dateien. Alle Verbindungen sind verschlüsselt.</p>
-            </details>
-            <details>
-              <summary>Können sich Lieferanten selbst anmelden?</summary>
-              <p>In dieser Version nicht. nexsource ist ein internes Werkzeug für Ihr Team — Lieferanten benötigen keinen Zugang.</p>
+              <p>NexSource läuft auf EU-Infrastruktur inklusive Objektspeicher für Dateien und ist DSGVO-konform. Alle Verbindungen sind verschlüsselt.</p>
             </details>
             <details>
               <summary>Kann ich später den Tarif wechseln?</summary>
@@ -343,12 +496,13 @@
         </div>
       </section>
 
+      <!-- CTA -->
       <section class="cta">
         <div class="container cta-inner">
-          <h2>Bringen Sie Struktur in Ihren Lieferantenstamm.</h2>
-          <p>Kostenlos starten. Workspace in unter fünf Minuten einsatzbereit.</p>
+          <h2>Bringen Sie Struktur in Ihren Einkauf.</h2>
+          <p>Lieferanten finden, prüfen, verwalten und bestellen — in einer Plattform. 14 Tage kostenlos, in Minuten startklar.</p>
           <a href="https://app.getnexsource.com" class="btn btn-primary btn-lg">
-            Mit nexsource starten
+            14 Tage kostenlos testen
             <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true">
               <path d="M5 12h14M13 6l6 6-6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" fill="none" />
             </svg>
@@ -364,12 +518,14 @@
             <span class="brand-mark" aria-hidden="true"></span>
             <span class="brand-name">nexsource</span>
           </a>
-          <p>Lieferantenmanagement für moderne Teams.</p>
+          <p>Lieferantenmanagement & Einkaufssoftware für den Mittelstand.</p>
         </div>
         <div class="footer-cols">
           <div>
             <h4>Produkt</h4>
+            <a href="#research">KI-Lieferantensuche</a>
             <a href="#features">Funktionen</a>
+            <a href="#compliance">Compliance</a>
             <a href="#pricing">Preise</a>
             <a href="https://app.getnexsource.com">Anmelden</a>
           </div>

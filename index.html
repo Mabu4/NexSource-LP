@@ -3,10 +3,14 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>nexsource — Supplier management, simplified</title>
+    <title>NexSource — Supplier management & procurement software for SMBs</title>
     <meta
       name="description"
-      content="nexsource is a modern supplier management platform. Track suppliers, contracts, certificates and documents in one place — never miss a renewal again."
+      content="Find, vet, manage and order from suppliers — in one platform. AI supplier discovery with VAT (VIES) & sanctions screening, purchase orders, contracts, certificates and a supplier portal. Procurement software for SMBs. 14-day free trial."
+    />
+    <meta
+      name="keywords"
+      content="supplier management software, procurement software, e-procurement, supplier portal, supplier scorecard, purchase order software, sanctions screening, supplier compliance, SRM software, procurement software SMB"
     />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -14,6 +18,9 @@
       href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
       rel="stylesheet"
     />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="apple-touch-icon" href="/favicon.svg" />
+    <meta name="theme-color" content="#4f46e5" />
     <link rel="canonical" href="https://getnexsource.com/" />
     <link rel="alternate" hreflang="en" href="https://getnexsource.com/" />
     <link rel="alternate" hreflang="de" href="https://getnexsource.com/de/" />
@@ -23,20 +30,21 @@
   <body>
     <header class="nav">
       <div class="container nav-inner">
-        <a href="#" class="brand" aria-label="nexsource home">
+        <a href="#" class="brand" aria-label="NexSource home">
           <span class="brand-mark" aria-hidden="true"></span>
           <span class="brand-name">nexsource</span>
         </a>
         <nav class="nav-links" aria-label="Primary">
+          <a href="#research">AI sourcing</a>
           <a href="#features">Features</a>
-          <a href="#how">How it works</a>
+          <a href="#compliance">Compliance</a>
           <a href="#pricing">Pricing</a>
           <a href="#faq">FAQ</a>
         </nav>
         <div class="nav-cta">
           <a href="/de/" class="lang-switch" hreflang="de" aria-label="Deutsch">DE</a>
           <a href="https://app.getnexsource.com" class="btn btn-ghost">Sign in</a>
-          <a href="https://app.getnexsource.com" class="btn btn-primary">Get started</a>
+          <a href="https://app.getnexsource.com" class="btn btn-primary">Start free trial</a>
         </div>
         <button class="nav-toggle" aria-label="Open menu" aria-expanded="false">
           <span></span><span></span><span></span>
@@ -49,35 +57,30 @@
       <section class="hero">
         <div class="container hero-inner">
           <div class="hero-copy">
-            <span class="eyebrow">Supplier management, simplified</span>
+            <span class="eyebrow">Supplier management & procurement for SMBs</span>
             <h1>
-              Every supplier, contract&nbsp;and certificate —
-              <span class="grad">in one place.</span>
+              Find, vet, manage and
+              <span class="grad">order from suppliers.</span>
             </h1>
             <p class="lead">
-              nexsource gives procurement and quality teams a single source of truth for
-              suppliers, documents and renewals. Stay compliant. Never miss a deadline.
+              NexSource is the all-in-one procurement platform for small and mid-sized teams:
+              supplier master data, purchase orders, contracts, compliance screening and a
+              supplier portal — in one place. No IT project, no spreadsheet chaos.
             </p>
             <div class="hero-cta">
               <a href="https://app.getnexsource.com" class="btn btn-primary btn-lg">
-                Start free trial
+                Start 14-day free trial
                 <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true">
-                  <path
-                    d="M5 12h14M13 6l6 6-6 6"
-                    stroke="currentColor"
-                    stroke-width="2"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    fill="none"
-                  />
+                  <path d="M5 12h14M13 6l6 6-6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" fill="none" />
                 </svg>
               </a>
               <a href="#pricing" class="btn btn-secondary btn-lg">View pricing</a>
             </div>
             <ul class="hero-meta">
+              <li>14 days free</li>
               <li>No credit card required</li>
-              <li>EU-hosted</li>
-              <li>Unlimited users</li>
+              <li>Live in minutes</li>
+              <li>EU-hosted, GDPR-compliant</li>
             </ul>
           </div>
 
@@ -92,9 +95,8 @@
                   <div class="mock-logo"></div>
                   <div class="mock-nav-item active">Dashboard</div>
                   <div class="mock-nav-item">Suppliers</div>
-                  <div class="mock-nav-item">Contracts</div>
-                  <div class="mock-nav-item">Certificates</div>
-                  <div class="mock-nav-item">Documents</div>
+                  <div class="mock-nav-item">Orders</div>
+                  <div class="mock-nav-item">Approvals</div>
                   <div class="mock-nav-item">Settings</div>
                 </div>
                 <div class="mock-main">
@@ -105,31 +107,31 @@
                       <span class="mock-stat-trend up">+6 this month</span>
                     </div>
                     <div class="mock-stat">
-                      <span class="mock-stat-label">Active contracts</span>
-                      <span class="mock-stat-value">94</span>
-                      <span class="mock-stat-trend">7 expiring</span>
+                      <span class="mock-stat-label">Open orders</span>
+                      <span class="mock-stat-value">17</span>
+                      <span class="mock-stat-trend">3 to approve</span>
                     </div>
                     <div class="mock-stat highlight">
-                      <span class="mock-stat-label">Certificates expiring</span>
+                      <span class="mock-stat-label">Certificates</span>
                       <span class="mock-stat-value">12</span>
-                      <span class="mock-stat-trend warn">within 30 days</span>
+                      <span class="mock-stat-trend warn">due in 30 days</span>
                     </div>
                   </div>
                   <div class="mock-table">
                     <div class="mock-row head">
-                      <span>Supplier</span><span>Status</span><span>Renewal</span>
+                      <span>Supplier</span><span>Status</span><span>Order no.</span>
                     </div>
                     <div class="mock-row">
-                      <span>Mueller GmbH</span><span class="pill ok">Active</span><span>14 Jun</span>
+                      <span>Mueller GmbH</span><span class="pill ok">Paid</span><span>ORD-2026-0042</span>
                     </div>
                     <div class="mock-row">
-                      <span>Atlas Logistics</span><span class="pill warn">Review</span><span>22 Jun</span>
+                      <span>Atlas Logistics</span><span class="pill warn">Approval</span><span>ORD-2026-0041</span>
                     </div>
                     <div class="mock-row">
-                      <span>Nordic Steel AB</span><span class="pill ok">Active</span><span>03 Jul</span>
+                      <span>Nordic Steel AB</span><span class="pill ok">Shipped</span><span>ORD-2026-0040</span>
                     </div>
                     <div class="mock-row">
-                      <span>Vega Components</span><span class="pill ok">Active</span><span>18 Jul</span>
+                      <span>Vega Components</span><span class="pill ok">Delivered</span><span>ORD-2026-0039</span>
                     </div>
                   </div>
                 </div>
@@ -141,16 +143,111 @@
         </div>
       </section>
 
-      <!-- LOGO STRIP -->
+      <!-- TRUST STRIP -->
       <section class="trust">
         <div class="container">
-          <p class="trust-label">Built for modern procurement and quality teams</p>
+          <p class="trust-label">For procurement, quality and compliance teams</p>
           <div class="trust-row">
-            <span>ISO&nbsp;9001 ready</span>
-            <span>GDPR compliant</span>
+            <span>Made in Germany</span>
+            <span>GDPR-compliant</span>
             <span>EU data residency</span>
-            <span>SSL by default</span>
-            <span>Stripe billing</span>
+            <span>Supply-chain ready</span>
+            <span>Sanctions screening</span>
+            <span>VAT (VIES) validation</span>
+          </div>
+        </div>
+      </section>
+
+      <!-- SPOTLIGHT 1: AI SUPPLIER DISCOVERY -->
+      <section id="research" class="section split">
+        <div class="container split-inner">
+          <div class="split-copy">
+            <span class="eyebrow">AI supplier discovery</span>
+            <h2>Find new suppliers — automatically vetted.</h2>
+            <p class="lead">
+              Describe what you need in a single sentence. NexSource searches the web, finds
+              matching suppliers and vets each one — corporate footprint, VAT ID and sanctions
+              included. Sourcing that used to take days, done in minutes.
+            </p>
+            <ul class="checks">
+              <li>Plain-text search instead of manual research: "organic apple grower in Saxony-Anhalt, IFS-certified, 500+ t/year"</li>
+              <li>Automatic VAT ID validation via the EU VIES system</li>
+              <li>Sanctions screening against EU, OFAC and UN lists</li>
+              <li>Trust score from 0–100 with risk rating and onboarding recommendation</li>
+              <li>Add a matching result as a supplier with one click</li>
+            </ul>
+            <a href="https://app.getnexsource.com" class="btn btn-primary">Try supplier search</a>
+          </div>
+          <div class="split-media">
+            <div class="demo-card">
+              <div class="demo-head">
+                <div>
+                  <div class="demo-title">Nordwald Bio GmbH</div>
+                  <div class="demo-sub">Quedlinburg, Germany · nordwald-bio.de</div>
+                </div>
+                <div class="score">92<small>Trust</small></div>
+              </div>
+              <div class="demo-line">
+                <span class="label">VAT ID (VIES)</span>
+                <span class="tag ok">Valid &amp; verified</span>
+              </div>
+              <div class="demo-line">
+                <span class="label">Sanctions lists</span>
+                <span class="tag ok">No match</span>
+              </div>
+              <div class="demo-line">
+                <span class="label">Certifications</span>
+                <span class="tag muted">IFS Food · Organic</span>
+              </div>
+              <div class="demo-line">
+                <span class="label">Recommendation</span>
+                <span class="tag ok">Proceed with onboarding</span>
+              </div>
+            </div>
+            <div class="blob blob-a"></div>
+          </div>
+        </div>
+      </section>
+
+      <!-- SPOTLIGHT 2: ORDERS & APPROVALS -->
+      <section id="orders" class="section split section-alt reverse">
+        <div class="container split-inner">
+          <div class="split-copy">
+            <span class="eyebrow">Orders & approvals</span>
+            <h2>From request to payment — one clear order process.</h2>
+            <p class="lead">
+              Create purchase orders, get internal approval and track every step — all the way
+              to payment. With automatic order numbers, an approval workflow and a status history
+              that documents each transaction in an audit-proof way.
+            </p>
+            <ul class="checks">
+              <li>Automatic order numbers (ORD-2026-0042) per organization</li>
+              <li>Internal approval by owner or manager before anything is sent</li>
+              <li>Supplier accepts, ships and delivers right from the portal</li>
+              <li>Complete status history from "Pending approval" to "Paid"</li>
+              <li>Per-supplier payment terms & automatic payment reminders</li>
+            </ul>
+            <a href="https://app.getnexsource.com" class="btn btn-primary">See the order flow</a>
+          </div>
+          <div class="split-media">
+            <div class="demo-card">
+              <div class="demo-head">
+                <div>
+                  <div class="demo-title">Order ORD-2026-0042</div>
+                  <div class="demo-sub">Mueller GmbH · €1,480.00 · Net 14 days</div>
+                </div>
+                <span class="tag ok">Shipped</span>
+              </div>
+              <div class="flow">
+                <div class="flow-step"><span class="flow-dot"></span>Created<span class="who">Procurement</span></div>
+                <div class="flow-step"><span class="flow-dot"></span>Approved internally<span class="who">Manager</span></div>
+                <div class="flow-step"><span class="flow-dot"></span>Accepted by supplier<span class="who">Supplier</span></div>
+                <div class="flow-step"><span class="flow-dot active"></span>Shipped<span class="who">Supplier</span></div>
+                <div class="flow-step muted"><span class="flow-dot pending"></span>Delivered<span class="who">open</span></div>
+                <div class="flow-step muted"><span class="flow-dot pending"></span>Paid<span class="who">open</span></div>
+              </div>
+            </div>
+            <div class="blob blob-b"></div>
           </div>
         </div>
       </section>
@@ -160,10 +257,10 @@
         <div class="container">
           <div class="section-head">
             <span class="eyebrow">Features</span>
-            <h2>Everything your supplier base needs.</h2>
+            <h2>Everything your supplier base needs — in one tool.</h2>
             <p>
-              From the first onboarding to the next renewal — manage the full supplier
-              lifecycle without leaving a single tab.
+              From supplier onboarding through scoring and contracts to purchase orders:
+              NexSource brings your entire procurement and supplier process together.
             </p>
           </div>
 
@@ -172,89 +269,122 @@
               <div class="feature-icon">
                 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
               </div>
-              <h3>Supplier directory</h3>
-              <p>One central database for contacts, addresses, status and notes — searchable and filterable in seconds.</p>
+              <h3>Supplier master data</h3>
+              <p>One central supplier database for contacts, addresses, VAT IDs, payment terms and status — searchable and filterable in seconds.</p>
             </article>
 
             <article class="feature">
               <div class="feature-icon">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><path d="M14 2v6h6"/><path d="M9 13h6M9 17h6"/></svg>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="11" width="18" height="11" rx="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
               </div>
-              <h3>Contracts</h3>
-              <p>Store contracts with validity windows. Get alerts before they expire so renewals never slip through.</p>
+              <h3>Supplier portal</h3>
+              <p>Suppliers maintain their own master data via a secure link — no account needed. Every change reaches your system only after you approve it.</p>
             </article>
 
             <article class="feature">
               <div class="feature-icon">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="6"/><path d="M15.5 13l1.5 8-5-3-5 3 1.5-8"/></svg>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2l2.4 6.9H21l-5.3 4 2 6.9L12 16l-5.7 3.8 2-6.9L3 8.9h6.6z"/></svg>
               </div>
-              <h3>Certificates</h3>
-              <p>Track ISO, quality and compliance certificates per supplier. Expiry warnings at 30, 60 and 90 days.</p>
+              <h3>Supplier scorecard</h3>
+              <p>Rate communication, reliability, flexibility, cooperation and problem-solving on a 1–10 scale — with an overall score per supplier.</p>
             </article>
 
             <article class="feature">
               <div class="feature-icon">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/><path d="M3.27 6.96 12 12.01l8.73-5.05M12 22.08V12"/></svg>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><path d="M14 2v6h6"/><path d="M9 15l2 2 4-4"/></svg>
               </div>
-              <h3>Materials</h3>
-              <p>Catalog of items each supplier provides, with units and prices — ready for the procurement conversation.</p>
+              <h3>Contracts & certificates</h3>
+              <p>Manage contracts and certificates (ISO, IFS, BRC, organic) with validity windows. Automatic expiry alerts at 30, 60 and 90 days.</p>
             </article>
 
             <article class="feature">
               <div class="feature-icon">
                 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M13 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V9z"/><path d="M13 2v7h7"/></svg>
               </div>
-              <h3>Documents</h3>
-              <p>Upload any supporting file — secure, organized by supplier, accessible to your whole team.</p>
+              <h3>Document management</h3>
+              <p>All supplier documents secure and organized in one place — per supplier, EU-hosted and available to your whole team at any time.</p>
             </article>
 
             <article class="feature">
               <div class="feature-icon">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 3v18h18"/><path d="M7 14l4-4 4 3 5-6"/></svg>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
               </div>
-              <h3>Dashboard & alerts</h3>
-              <p>See the health of your supplier base at a glance. Expiring docs, new suppliers, recent activity.</p>
+              <h3>Team, roles & dashboard</h3>
+              <p>Unlimited users with roles (owner, manager, member). The dashboard surfaces pending approvals, expiring documents and recent activity at a glance.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- COMPLIANCE -->
+      <section id="compliance" class="section section-alt">
+        <div class="container">
+          <div class="section-head">
+            <span class="eyebrow">Compliance</span>
+            <h2>Compliance that runs in the background.</h2>
+            <p>
+              Supply-chain due diligence, sanctions, VAT IDs and certificates: NexSource checks
+              and documents automatically, so you're on the safe side at every audit.
+            </p>
+          </div>
+
+          <div class="grid-4">
+            <article class="feature">
+              <h3>Due-diligence ready</h3>
+              <p>Document supplier due-diligence — increasingly required as larger customers vet your supply chain.</p>
+            </article>
+            <article class="feature">
+              <h3>Sanctions screening</h3>
+              <p>Automatic checks against EU, OFAC and UN sanctions lists on every supplier search.</p>
+            </article>
+            <article class="feature">
+              <h3>VAT ID (VIES) checks</h3>
+              <p>EU VAT IDs are validated directly through the official VIES system.</p>
+            </article>
+            <article class="feature">
+              <h3>Audit-proof</h3>
+              <p>Certificates, contracts and approvals documented end to end — with a full status history.</p>
             </article>
           </div>
         </div>
       </section>
 
       <!-- HOW IT WORKS -->
-      <section id="how" class="section section-alt">
+      <section id="how" class="section">
         <div class="container">
           <div class="section-head">
             <span class="eyebrow">How it works</span>
-            <h2>Up and running in an afternoon.</h2>
-            <p>No implementation projects. No consultants. Just sign up and start onboarding suppliers.</p>
+            <h2>Live in minutes — no IT project.</h2>
+            <p>No implementation projects, no consultants. Sign up, add suppliers, start ordering.</p>
           </div>
 
           <ol class="steps">
             <li>
               <span class="step-num">01</span>
               <h3>Create your workspace</h3>
-              <p>Sign up with email, invite your team. Unlimited users on every plan.</p>
+              <p>Sign up with email and invite your team. Unlimited users with roles on every plan.</p>
             </li>
             <li>
               <span class="step-num">02</span>
-              <h3>Add your suppliers</h3>
-              <p>Add them one by one or in bulk. Upload contracts, certificates and documents per supplier.</p>
+              <h3>Find & add suppliers</h3>
+              <p>Capture existing suppliers or find new ones with AI search — automatically vetted.</p>
             </li>
             <li>
               <span class="step-num">03</span>
-              <h3>Stay ahead of renewals</h3>
-              <p>Your dashboard surfaces what's expiring — so the next audit doesn't catch you off guard.</p>
+              <h3>Order & stay in control</h3>
+              <p>Approve orders, track deadlines and document every transaction in an audit-proof way.</p>
             </li>
           </ol>
         </div>
       </section>
 
       <!-- PRICING -->
-      <section id="pricing" class="section">
+      <section id="pricing" class="section section-alt">
         <div class="container">
           <div class="section-head">
             <span class="eyebrow">Pricing</span>
-            <h2>Simple plans. Unlimited users.</h2>
-            <p>Pick a plan based on the number of suppliers you manage. Change tier anytime.</p>
+            <h2>Transparent pricing. Unlimited users.</h2>
+            <p>Pick a plan by the number of suppliers you manage. 14-day free trial, no demo required, cancel anytime.</p>
           </div>
 
           <div class="pricing-grid">
@@ -269,12 +399,13 @@
               </div>
               <ul class="plan-features">
                 <li>Up to 25 suppliers</li>
-                <li>Unlimited users</li>
-                <li>Contracts & certificates</li>
-                <li>Document storage</li>
-                <li>Expiry alerts</li>
+                <li>Unlimited users & roles</li>
+                <li>Orders & approvals</li>
+                <li>Contracts, certificates & documents</li>
+                <li>Supplier portal & scorecard</li>
+                <li>5 AI supplier searches / month</li>
               </ul>
-              <a href="https://app.getnexsource.com" class="btn btn-secondary btn-block">Start with Starter</a>
+              <a href="https://app.getnexsource.com" class="btn btn-secondary btn-block">Start 14-day free trial</a>
             </article>
 
             <article class="plan featured">
@@ -289,12 +420,12 @@
               </div>
               <ul class="plan-features">
                 <li>Up to 150 suppliers</li>
-                <li>Unlimited users</li>
                 <li>Everything in Starter</li>
+                <li>Expiry notifications</li>
+                <li>20 AI supplier searches / month</li>
                 <li>Priority email support</li>
-                <li>Advanced dashboard KPIs</li>
               </ul>
-              <a href="https://app.getnexsource.com" class="btn btn-primary btn-block">Choose Pro</a>
+              <a href="https://app.getnexsource.com" class="btn btn-primary btn-block">Start 14-day free trial</a>
             </article>
 
             <article class="plan">
@@ -308,23 +439,24 @@
               </div>
               <ul class="plan-features">
                 <li>Unlimited suppliers</li>
-                <li>Unlimited users</li>
                 <li>Everything in Pro</li>
+                <li>50 AI supplier searches / month</li>
                 <li>Dedicated onboarding</li>
                 <li>SLA available on request</li>
               </ul>
-              <a href="https://app.getnexsource.com" class="btn btn-secondary btn-block">Choose Scale</a>
+              <a href="https://app.getnexsource.com" class="btn btn-secondary btn-block">Start 14-day free trial</a>
             </article>
           </div>
 
           <p class="pricing-note">
-            All prices in EUR, excl. VAT. Billed monthly via Stripe. Cancel anytime.
+            All prices in EUR, excl. VAT. 14-day free trial, no credit card required.
+            Billed monthly via Stripe. Cancel anytime.
           </p>
         </div>
       </section>
 
       <!-- FAQ -->
-      <section id="faq" class="section section-alt">
+      <section id="faq" class="section">
         <div class="container faq-container">
           <div class="section-head">
             <span class="eyebrow">FAQ</span>
@@ -334,19 +466,27 @@
           <div class="faq">
             <details>
               <summary>Is there a free trial?</summary>
-              <p>Yes. You can create an account and explore nexsource before adding a payment method. Upgrade when you're ready.</p>
+              <p>Yes. Every plan starts with a 14-day free trial — no risk, no credit card required. You only pay once you decide on a plan.</p>
+            </details>
+            <details>
+              <summary>How does AI supplier discovery work?</summary>
+              <p>You describe the supplier you're looking for in a single sentence. NexSource searches the web, suggests matching suppliers and vets each one automatically: VAT ID via VIES, sanctions lists (EU/OFAC/UN) and other trust signals — summarized in a trust score from 0–100. Add a matching result as a supplier with one click.</p>
+            </details>
+            <details>
+              <summary>Can suppliers contribute themselves?</summary>
+              <p>Yes. Through the supplier portal your suppliers get a secure self-service link — no account needed. They update their master data and confirm orders there. Every change reaches you as an approval request; nothing changes without your review.</p>
+            </details>
+            <details>
+              <summary>Does NexSource support supply-chain due diligence?</summary>
+              <p>NexSource helps you document due-diligence obligations: automatic sanctions screening, VAT ID validation, certificate management and a complete status history. This is especially relevant when larger customers vet your supply chain and ask for evidence.</p>
             </details>
             <details>
               <summary>How are plans limited?</summary>
-              <p>Plans are gated by the number of suppliers you manage — not by user seats. Every plan includes unlimited users.</p>
+              <p>Plans are gated by the number of suppliers and AI searches per month — not by user seats. Every plan includes unlimited users with roles (owner, manager, member).</p>
             </details>
             <details>
               <summary>Where is my data hosted?</summary>
-              <p>nexsource is built on Cloudflare's EU infrastructure with object storage for files. All connections are encrypted in transit.</p>
-            </details>
-            <details>
-              <summary>Can suppliers log in themselves?</summary>
-              <p>Not in this version. nexsource is an internal tool for your team — suppliers don't need accounts.</p>
+              <p>NexSource runs on EU infrastructure including object storage for files and is GDPR-compliant. All connections are encrypted in transit.</p>
             </details>
             <details>
               <summary>Can I switch plans later?</summary>
@@ -359,10 +499,10 @@
       <!-- CTA -->
       <section class="cta">
         <div class="container cta-inner">
-          <h2>Bring order to your supplier base.</h2>
-          <p>Start free today. Set up your workspace in under five minutes.</p>
+          <h2>Bring order to your procurement.</h2>
+          <p>Find, vet, manage and order from suppliers — in one platform. 14 days free, live in minutes.</p>
           <a href="https://app.getnexsource.com" class="btn btn-primary btn-lg">
-            Get started with nexsource
+            Start 14-day free trial
             <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true">
               <path d="M5 12h14M13 6l6 6-6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" fill="none" />
             </svg>
@@ -378,19 +518,20 @@
             <span class="brand-mark" aria-hidden="true"></span>
             <span class="brand-name">nexsource</span>
           </a>
-          <p>Supplier management built for modern teams.</p>
+          <p>Supplier management & procurement software for SMBs.</p>
         </div>
         <div class="footer-cols">
           <div>
             <h4>Product</h4>
+            <a href="#research">AI sourcing</a>
             <a href="#features">Features</a>
+            <a href="#compliance">Compliance</a>
             <a href="#pricing">Pricing</a>
             <a href="https://app.getnexsource.com">Sign in</a>
           </div>
           <div>
-            <h4>Company</h4>
-            <a href="#">About</a>
-            <a href="#">Contact</a>
+            <h4>Language</h4>
+            <a href="/de/">Deutsch</a>
           </div>
           <div>
             <h4>Legal</h4>
