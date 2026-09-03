@@ -1,0 +1,365 @@
+<!doctype html>
+<html lang="de">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Sanktionslistenprüfung für Lieferanten (EU, OFAC, UN) | NexSource</title>
+    <meta name="description" content="Lieferanten automatisch gegen EU-, OFAC- und UN-Sanktionslisten prüfen — inklusive VIES-Validierung der USt-IdNr. und dokumentiertem Nachweis fürs Audit." />
+    <meta name="keywords" content="Sanktionslistenprüfung, Sanktionslisten Software, EU Sanktionsliste prüfen, OFAC Prüfung, Embargoprüfung Lieferanten" />
+    <link rel="canonical" href="https://getnexsource.com/de/sanktionslisten-pruefung/" />
+
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="NexSource" />
+    <meta property="og:locale" content="de_DE" />
+    <meta property="og:title" content="Sanktionslistenprüfung für Lieferanten (EU, OFAC, UN) | NexSource" />
+    <meta property="og:description" content="Lieferanten automatisch gegen EU-, OFAC- und UN-Sanktionslisten prüfen — inklusive VIES-Validierung der USt-IdNr. und dokumentiertem Nachweis fürs Audit." />
+    <meta property="og:url" content="https://getnexsource.com/de/sanktionslisten-pruefung/" />
+    <meta property="og:image" content="https://getnexsource.com/og-image.png" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Sanktionslistenprüfung für Lieferanten (EU, OFAC, UN) | NexSource" />
+    <meta name="twitter:description" content="Lieferanten automatisch gegen EU-, OFAC- und UN-Sanktionslisten prüfen — inklusive VIES-Validierung der USt-IdNr. und dokumentiertem Nachweis fürs Audit." />
+    <meta name="twitter:image" content="https://getnexsource.com/og-image.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="preload"
+      as="style"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+      onload="this.onload=null;this.rel='stylesheet'"
+    />
+    <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" /></noscript>
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="apple-touch-icon" href="/favicon.svg" />
+    <meta name="theme-color" content="#4f46e5" />
+    <link rel="stylesheet" href="/styles.css" />
+    <link rel="stylesheet" href="/content.css" />
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Organization",
+      "@id": "https://getnexsource.com/#organization",
+      "name": "NexSource",
+      "url": "https://getnexsource.com/",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://getnexsource.com/favicon.svg"
+      },
+      "sameAs": []
+    },
+    {
+      "@type": "SoftwareApplication",
+      "@id": "https://getnexsource.com/#software",
+      "name": "NexSource",
+      "applicationCategory": "BusinessApplication",
+      "applicationSubCategory": "Lieferantenmanagement- und Einkaufssoftware",
+      "operatingSystem": "Web",
+      "url": "https://getnexsource.com/",
+      "description": "Lieferantenmanagement- und Einkaufssoftware für den Mittelstand: KI-Lieferantensuche mit VIES- und Sanktionslistenprüfung, Bestellungen, Verträge, Zertifikate und Lieferantenportal.",
+      "publisher": {
+        "@id": "https://getnexsource.com/#organization"
+      },
+      "offers": [
+        {
+          "@type": "Offer",
+          "name": "Starter",
+          "price": "29",
+          "priceCurrency": "EUR",
+          "category": "subscription",
+          "url": "https://getnexsource.com/de/#pricing"
+        },
+        {
+          "@type": "Offer",
+          "name": "Pro",
+          "price": "89",
+          "priceCurrency": "EUR",
+          "category": "subscription",
+          "url": "https://getnexsource.com/de/#pricing"
+        },
+        {
+          "@type": "Offer",
+          "name": "Scale",
+          "price": "199",
+          "priceCurrency": "EUR",
+          "category": "subscription",
+          "url": "https://getnexsource.com/de/#pricing"
+        }
+      ]
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Wer muss Sanktionslisten prüfen?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Die EU-Sanktionsverordnungen gelten unmittelbar für alle Unternehmen in der EU — unabhängig von der Größe. Es gibt keine Bagatellgrenze und keine Mitarbeiterzahl, ab der die Pflicht erst greift. Verboten ist insbesondere, gelisteten Personen und Organisationen direkt oder indirekt Gelder oder wirtschaftliche Ressourcen bereitzustellen."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Welche Listen sind relevant?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Für EU-Unternehmen sind die EU-Sanktionslisten maßgeblich. Praktisch relevant sind zusätzlich die UN-Listen sowie die US-Listen des OFAC (insbesondere SDN), sobald Sie US-Bezug haben — etwa durch US-Kunden, US-Dollar-Zahlungen oder US-Vorprodukte. NexSource prüft gegen EU, OFAC und UN."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Wie oft muss geprüft werden?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Sinnvoll ist eine Prüfung vor der Aufnahme einer Geschäftsbeziehung und danach anlassbezogen — die Listen ändern sich laufend. Wichtig ist, dass die Prüfung dokumentiert ist: Ohne Nachweis lässt sich im Zweifel nicht belegen, dass sie stattgefunden hat."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Ersetzt NexSource eine Compliance-Beratung?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Nein. NexSource automatisiert und dokumentiert den Abgleich und liefert Ihnen die Nachweise. Die Bewertung eines Treffers, die Entscheidung über die Geschäftsbeziehung und die Frage nach Genehmigungspflichten bleiben Ihre unternehmerische und juristische Verantwortung. Bei einem Treffer sollten Sie fachkundigen Rat einholen."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Was passiert bei einem Treffer?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Ein Treffer ist zunächst ein Verdachtsmoment, kein Urteil — Namensgleichheiten kommen vor. NexSource weist den Treffer aus, sodass Sie ihn prüfen, dokumentieren und bewusst entscheiden können, statt ihn unbemerkt zu übergehen."
+          }
+        }
+      ]
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Startseite",
+          "item": "https://getnexsource.com/de/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Sanktionslistenprüfung",
+          "item": "https://getnexsource.com/de/sanktionslisten-pruefung/"
+        }
+      ]
+    }
+  ]
+}
+    </script>
+  </head>
+  <body>
+    <header class="nav">
+      <div class="container nav-inner">
+        <a href="/de/" class="brand" aria-label="NexSource">
+          <span class="brand-mark" aria-hidden="true"></span>
+          <span class="brand-name">nexsource</span>
+        </a>
+        <nav class="nav-links" aria-label="Hauptnavigation">
+          <a href="/de/#research">KI-Lieferantensuche</a>
+          <a href="/de/lieferantenmanagement-software/">Lösungen</a>
+          <a href="/de/ratgeber/">Ratgeber</a>
+          <a href="/de/#pricing">Preise</a>
+        </nav>
+        <div class="nav-cta">
+          <a href="/" class="lang-switch" hreflang="en" aria-label="English">EN</a>
+          <a href="https://app.getnexsource.com" class="btn btn-ghost" data-cta="signin">Anmelden</a>
+          <a href="https://app.getnexsource.com" class="btn btn-primary" data-cta="trial-nav">Kostenlos testen</a>
+        </div>
+        <button class="nav-toggle" aria-label="Menü öffnen" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </header>
+      <nav class="breadcrumb" aria-label="Breadcrumb"><div class="container"><ol><li><a href="/de/">Startseite</a></li><li aria-current="page">Sanktionslistenprüfung</li></ol></div></nav>
+    <main>
+
+      <section class="page-hero">
+        <div class="container">
+          <span class="eyebrow">Compliance</span>
+          <h1>Sanktionslistenprüfung für Lieferanten — automatisch und dokumentiert</h1>
+          <p class="lead">Jeder Lieferant, den Sie über NexSource finden oder anlegen, wird gegen EU-, OFAC- und UN-Sanktionslisten abgeglichen und die Umsatzsteuer-ID über das EU-VIES-System validiert. Das Ergebnis wird dokumentiert — nachweisbar im Audit.</p>
+          <div class="hero-cta">
+            <a href="https://app.getnexsource.com" class="btn btn-primary btn-lg" data-cta="trial-hero">14 Tage kostenlos testen</a>
+            <a href="/de/demo/" class="btn btn-secondary btn-lg" data-cta="demo-hero">Demo anfragen</a>
+          </div>
+          <ul class="hero-meta"><li>14 Tage kostenlos</li><li>Keine Kreditkarte nötig</li><li>Unbegrenzte Nutzer</li><li>EU-Hosting, DSGVO-konform</li></ul>
+        </div>
+      </section>
+      <section class="section">
+        <div class="container">
+          <div class="prose">
+
+<div class="answer-box"><p><strong>Kurz gesagt:</strong> Sanktionsrecht gilt in der EU für jedes Unternehmen, ohne Größengrenze. Wer Lieferanten nicht abgleicht, riskiert empfindliche Bußgelder und im Extremfall strafrechtliche Folgen. NexSource prüft automatisch bei jeder Lieferantensuche gegen EU-, OFAC- und UN-Listen und hält das Ergebnis fest.</p></div>
+
+<nav class="toc" aria-label="Inhaltsverzeichnis">
+  <h2>Inhalt</h2>
+  <ol><li><a href="#pflicht">Die Pflicht gilt auch für kleine Unternehmen</a></li><li><a href="#listen">Welche Listen relevant sind</a></li><li><a href="#prozess">Wie die Prüfung in NexSource abläuft</a></li><li><a href="#dokumentation">Warum Dokumentation wichtiger ist als die Prüfung selbst</a></li><li><a href="#treffer">Was tun bei einem Treffer?</a></li></ol>
+</nav>
+
+<h2 id="pflicht">Die Pflicht gilt auch für kleine Unternehmen</h2>
+<p>Ein weit verbreiteter Irrtum lautet, Sanktionsprüfung sei ein Konzernthema. Das Gegenteil ist der Fall: EU-Sanktionsverordnungen gelten unmittelbar in allen Mitgliedstaaten und für alle Wirtschaftsteilnehmer — vom Einzelunternehmen bis zum Konzern. Untersagt ist unter anderem, gelisteten Personen oder Organisationen direkt <em>oder indirekt</em> Gelder und wirtschaftliche Ressourcen zur Verfügung zu stellen.</p>
+<p>„Indirekt" ist dabei der schwierige Teil: Es genügt nicht, den Namen des Vertragspartners zu prüfen, wenn dahinter eine gelistete Person als wirtschaftlich Berechtigter steht. Deshalb gehört zur Prüfung auch ein Blick auf Eigentümerstrukturen — insbesondere bei Neukunden und Lieferanten aus Risikoregionen.</p>
+<div class="callout warn"><strong>Hinweis</strong><p>Diese Seite gibt einen praxisorientierten Überblick und ersetzt keine Rechtsberatung. Bei konkreten Treffern, Genehmigungsfragen oder Geschäften mit Bezug zu Sanktionsregimen sollten Sie fachkundigen Rat einholen.</p></div>
+
+<h2 id="listen">Welche Listen relevant sind</h2>
+<div class="table-wrap">
+  <table class="data">
+    
+    <thead><tr><th scope="col">Liste</th><th scope="col">Herausgeber</th><th scope="col">Wann relevant</th></tr></thead>
+    <tbody>
+      <tr><th scope="row">EU-Sanktionsliste (CFSP)</th><td>Europäische Union</td><td>Immer — unmittelbar bindend für EU-Unternehmen</td></tr>
+      <tr><th scope="row">UN-Sanktionsliste</th><td>Vereinte Nationen</td><td>Grundlage vieler EU-Listungen, international relevant</td></tr>
+      <tr><th scope="row">OFAC SDN List</th><td>US-Finanzministerium</td><td>Bei US-Bezug: US-Kunden, USD-Zahlungen, US-Vorprodukte, US-Tochtergesellschaften</td></tr>
+    </tbody>
+  </table>
+</div>
+<p>NexSource prüft gegen alle drei. Zusätzlich wird die Umsatzsteuer-Identifikationsnummer über das offizielle <a href="/de/ust-idnr-pruefen/">EU-VIES-System</a> validiert — das ist eine andere Prüfung mit einem anderen Zweck, gehört im Lieferanten-Onboarding aber in denselben Arbeitsschritt.</p>
+
+<h2 id="prozess">Wie die Prüfung in NexSource abläuft</h2>
+<ol>
+  <li><strong>Lieferant suchen oder anlegen</strong> — bei der KI-Lieferantensuche geschieht die Prüfung automatisch für jedes Suchergebnis.</li>
+  <li><strong>Abgleich</strong> — Name und Unternehmensdaten werden gegen EU-, OFAC- und UN-Listen abgeglichen.</li>
+  <li><strong>USt-IdNr.-Validierung</strong> — parallel wird die Umsatzsteuer-ID über VIES geprüft.</li>
+  <li><strong>Trust-Score</strong> — die Signale werden zu einer Bewertung von 0–100 mit Risikoeinstufung und Onboarding-Empfehlung verdichtet.</li>
+  <li><strong>Dokumentation</strong> — das Ergebnis bleibt am Lieferantendatensatz erhalten und ist im Audit vorzeigbar.</li>
+</ol>
+
+<h2 id="dokumentation">Warum Dokumentation wichtiger ist als die Prüfung selbst</h2>
+<p>Viele Unternehmen prüfen tatsächlich — nur eben in einem Browser-Tab, ohne Spur. Im Prüfungsfall ist die entscheidende Frage jedoch nicht, ob Sie geprüft haben, sondern ob Sie es <em>belegen</em> können. Eine Prüfung ohne Nachweis ist im Zweifel keine Prüfung.</p>
+<p>Deshalb speichert NexSource das Prüfergebnis am Lieferanten, statt es nur anzuzeigen. Zusammen mit Zertifikaten, Verträgen und der Statushistorie der Bestellungen ergibt sich eine vollständige Lieferantenakte.</p>
+
+<h2 id="treffer">Was tun bei einem Treffer?</h2>
+<ol>
+  <li><strong>Nicht sofort handeln, sondern verifizieren.</strong> Namensgleichheiten sind häufig — prüfen Sie Geburtsdatum, Sitz, Registernummer und weitere Identifikatoren.</li>
+  <li><strong>Vorgang einfrieren.</strong> Keine Zahlungen und keine Lieferungen, solange der Verdacht nicht ausgeräumt ist.</li>
+  <li><strong>Fachkundigen Rat einholen.</strong> Bei einem bestätigten Treffer bestehen unter Umständen Melde- und Einfrierpflichten.</li>
+  <li><strong>Alles dokumentieren.</strong> Prüfzeitpunkt, Ergebnis, Bewertung und Entscheidung — das ist Ihre Absicherung.</li>
+</ol>
+
+          </div>
+        </div>
+      </section>
+      <section class="section section-alt">
+        <div class="container faq-container">
+          <div class="section-head">
+            <span class="eyebrow">FAQ</span>
+            <h2>Häufige Fragen</h2>
+          </div>
+          <div class="faq">
+            <details>
+              <summary>Wer muss Sanktionslisten prüfen?</summary>
+              <p>Die EU-Sanktionsverordnungen gelten unmittelbar für alle Unternehmen in der EU — unabhängig von der Größe. Es gibt keine Bagatellgrenze und keine Mitarbeiterzahl, ab der die Pflicht erst greift. Verboten ist insbesondere, gelisteten Personen und Organisationen direkt oder indirekt Gelder oder wirtschaftliche Ressourcen bereitzustellen.</p>
+            </details>
+            <details>
+              <summary>Welche Listen sind relevant?</summary>
+              <p>Für EU-Unternehmen sind die EU-Sanktionslisten maßgeblich. Praktisch relevant sind zusätzlich die UN-Listen sowie die US-Listen des OFAC (insbesondere SDN), sobald Sie US-Bezug haben — etwa durch US-Kunden, US-Dollar-Zahlungen oder US-Vorprodukte. NexSource prüft gegen EU, OFAC und UN.</p>
+            </details>
+            <details>
+              <summary>Wie oft muss geprüft werden?</summary>
+              <p>Sinnvoll ist eine Prüfung vor der Aufnahme einer Geschäftsbeziehung und danach anlassbezogen — die Listen ändern sich laufend. Wichtig ist, dass die Prüfung dokumentiert ist: Ohne Nachweis lässt sich im Zweifel nicht belegen, dass sie stattgefunden hat.</p>
+            </details>
+            <details>
+              <summary>Ersetzt NexSource eine Compliance-Beratung?</summary>
+              <p>Nein. NexSource automatisiert und dokumentiert den Abgleich und liefert Ihnen die Nachweise. Die Bewertung eines Treffers, die Entscheidung über die Geschäftsbeziehung und die Frage nach Genehmigungspflichten bleiben Ihre unternehmerische und juristische Verantwortung. Bei einem Treffer sollten Sie fachkundigen Rat einholen.</p>
+            </details>
+            <details>
+              <summary>Was passiert bei einem Treffer?</summary>
+              <p>Ein Treffer ist zunächst ein Verdachtsmoment, kein Urteil — Namensgleichheiten kommen vor. NexSource weist den Treffer aus, sodass Sie ihn prüfen, dokumentieren und bewusst entscheiden können, statt ihn unbemerkt zu übergehen.</p>
+            </details>
+          </div>
+        </div>
+      </section>
+      <section class="section">
+        <div class="container">
+          <div class="section-head"><h2>Passend dazu</h2></div>
+          <div class="feature-grid">
+            <a class="feature feature-link" href="/de/ust-idnr-pruefen/">
+              <h3>USt-IdNr. prüfen</h3>
+              <p>Kostenloses Prüftool für Umsatzsteuer-Identifikationsnummern aller EU-Staaten.</p>
+            </a>
+            <a class="feature feature-link" href="/de/lksg-software/">
+              <h3>LkSG für Zulieferer</h3>
+              <p>Was Großkunden von mittelständischen Lieferanten verlangen — und wie Sie liefern.</p>
+            </a>
+            <a class="feature feature-link" href="/de/lieferantenmanagement-software/">
+              <h3>Lieferantenmanagement-Software</h3>
+              <p>Die vollständige Lieferantenakte inklusive Nachweisführung.</p>
+            </a>
+          </div>
+        </div>
+      </section>
+      <section class="cta">
+        <div class="container cta-inner">
+          <h2>Bringen Sie Ordnung in Ihren Einkauf.</h2>
+          <p>Lieferanten finden, prüfen, verwalten und bestellen — in einer Plattform. 14 Tage kostenlos, in Minuten startklar.</p>
+          <div class="cta-actions">
+            <a href="https://app.getnexsource.com" class="btn btn-primary btn-lg" data-cta="trial-band">14 Tage kostenlos testen</a>
+            <a href="/de/demo/" class="btn btn-secondary btn-lg" data-cta="demo-band">Demo anfragen</a>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="container footer-inner">
+        <div class="footer-brand">
+          <a href="/de/" class="brand">
+            <span class="brand-mark" aria-hidden="true"></span>
+            <span class="brand-name">nexsource</span>
+          </a>
+          <p>Lieferantenmanagement &amp; Einkaufssoftware für den Mittelstand.</p>
+        </div>
+        <div class="footer-cols footer-cols-wide">
+          <div>
+            <h4>Produkt</h4>
+            <a href="/de/#research">KI-Lieferantensuche</a>
+            <a href="/de/#features">Funktionen</a>
+            <a href="/de/#compliance">Compliance</a>
+            <a href="/de/#pricing">Preise</a>
+            <a href="/de/demo/">Demo anfragen</a>
+          </div>
+          <div>
+            <h4>Lösungen</h4>
+            <a href="/de/lieferantenmanagement-software/">Lieferantenmanagement-Software</a>
+            <a href="/de/einkaufssoftware-mittelstand/">Einkaufssoftware Mittelstand</a>
+            <a href="/de/lieferantenportal/">Lieferantenportal</a>
+            <a href="/de/lieferantenbewertung/">Lieferantenbewertung</a>
+            <a href="/de/sanktionslisten-pruefung/">Sanktionslistenprüfung</a>
+            <a href="/de/lksg-software/">LkSG für Zulieferer</a>
+          </div>
+          <div>
+            <h4>Ratgeber & Tools</h4>
+            <a href="/de/ratgeber/">Ratgeber</a>
+            <a href="/de/ust-idnr-pruefen/">USt-IdNr. prüfen (kostenlos)</a>
+            <a href="/de/vergleich/excel-vs-lieferantenmanagement-software/">Excel vs. Software</a>
+            <a href="/de/ratgeber/lieferantenmanagement/">Leitfaden Lieferantenmanagement</a>
+            <a href="/de/ratgeber/lieferantenaudit-checkliste/">Lieferantenaudit-Checkliste</a>
+          </div>
+          <div>
+            <h4>Rechtliches</h4>
+            <a href="/de/impressum.html">Impressum</a>
+            <a href="/de/datenschutz.html">Datenschutz</a>
+            <a href="/de/agb.html">AGB</a>
+          </div>
+          <div>
+            <h4>Sprache</h4>
+            <a href="/">English</a>
+          </div>
+        </div>
+      </div>
+      <div class="container footer-bottom">
+        <span>© <span id="year"></span> nexsource. Alle Rechte vorbehalten.</span>
+      </div>
+    </footer>
+    <a href="https://app.getnexsource.com" class="sticky-cta" data-cta="trial-sticky">14 Tage kostenlos testen</a>
+    <script src="/script.js"></script>
+    <script src="/seo.js"></script>
+  </body>
+</html>

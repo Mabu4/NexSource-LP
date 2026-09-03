@@ -1,0 +1,390 @@
+<!doctype html>
+<html lang="de">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>USt-IdNr. prüfen — kostenloses Tool für alle EU-Länder | NexSource</title>
+    <meta name="description" content="Umsatzsteuer-Identifikationsnummer kostenlos prüfen: Format und Prüfziffer für alle EU-Staaten, direkt im Browser, ohne Anmeldung und ohne Datenübertragung." />
+    <meta name="keywords" content="USt-IdNr prüfen, Umsatzsteuer-Identifikationsnummer prüfen, USt-ID Prüfung, VIES Abfrage, Umsatzsteuer ID validieren, qualifizierte Bestätigungsabfrage" />
+    <link rel="canonical" href="https://getnexsource.com/de/ust-idnr-pruefen/" />
+    <link rel="alternate" hreflang="de" href="https://getnexsource.com/de/ust-idnr-pruefen/" />
+    <link rel="alternate" hreflang="en" href="https://getnexsource.com/vat-number-validator/" />
+    <link rel="alternate" hreflang="x-default" href="https://getnexsource.com/vat-number-validator/" />
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="NexSource" />
+    <meta property="og:locale" content="de_DE" />
+    <meta property="og:title" content="USt-IdNr. prüfen — kostenloses Tool für alle EU-Länder | NexSource" />
+    <meta property="og:description" content="Umsatzsteuer-Identifikationsnummer kostenlos prüfen: Format und Prüfziffer für alle EU-Staaten, direkt im Browser, ohne Anmeldung und ohne Datenübertragung." />
+    <meta property="og:url" content="https://getnexsource.com/de/ust-idnr-pruefen/" />
+    <meta property="og:image" content="https://getnexsource.com/og-image.png" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="USt-IdNr. prüfen — kostenloses Tool für alle EU-Länder | NexSource" />
+    <meta name="twitter:description" content="Umsatzsteuer-Identifikationsnummer kostenlos prüfen: Format und Prüfziffer für alle EU-Staaten, direkt im Browser, ohne Anmeldung und ohne Datenübertragung." />
+    <meta name="twitter:image" content="https://getnexsource.com/og-image.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="preload"
+      as="style"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+      onload="this.onload=null;this.rel='stylesheet'"
+    />
+    <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" /></noscript>
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="apple-touch-icon" href="/favicon.svg" />
+    <meta name="theme-color" content="#4f46e5" />
+    <link rel="stylesheet" href="/styles.css" />
+    <link rel="stylesheet" href="/content.css" />
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Organization",
+      "@id": "https://getnexsource.com/#organization",
+      "name": "NexSource",
+      "url": "https://getnexsource.com/",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://getnexsource.com/favicon.svg"
+      },
+      "sameAs": []
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Was ist eine Umsatzsteuer-Identifikationsnummer?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Die USt-IdNr. ist eine EU-weit eindeutige Kennung für Unternehmen, die am innergemeinschaftlichen Waren- und Dienstleistungsverkehr teilnehmen. Sie unterscheidet sich von der Steuernummer des Finanzamts. In Deutschland beginnt sie mit „DE\" und hat neun Ziffern."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Warum muss ich die USt-IdNr. meines Geschäftspartners prüfen?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Für eine steuerfreie innergemeinschaftliche Lieferung ist die gültige USt-IdNr. des Abnehmers eine materielle Voraussetzung. Ist sie zum Lieferzeitpunkt ungültig, kann das Finanzamt die Steuerfreiheit versagen — die Umsatzsteuer bleibt dann an Ihnen hängen. Deshalb gehört die Prüfung ins Onboarding und sollte bei laufenden Geschäftsbeziehungen wiederholt werden."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Was prüft dieses Tool — und was nicht?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Dieses Tool prüft offline im Browser den länderspezifischen Aufbau und, wo ein veröffentlichtes Verfahren existiert, die Prüfziffer. Es erkennt damit Tippfehler und erfundene Nummern zuverlässig. Es kann jedoch nicht feststellen, ob die Nummer tatsächlich vergeben und aktuell gültig ist — dafür ist die Abfrage im EU-VIES-System bzw. beim Bundeszentralamt für Steuern erforderlich."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Was ist eine qualifizierte Bestätigungsabfrage?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Bei der einfachen Abfrage erfahren Sie nur, ob die Nummer gültig ist. Bei der qualifizierten Abfrage (in Deutschland über das Bundeszentralamt für Steuern) wird zusätzlich abgeglichen, ob Name, Ort, Postleitzahl und Straße zur Nummer passen. Für die Nachweisführung gegenüber dem Finanzamt ist die qualifizierte Abfrage mit dokumentiertem Ergebnis der sichere Weg."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Wie oft sollte man prüfen?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Vor der ersten steuerfreien Lieferung in jedem Fall, danach in regelmäßigen Abständen — bei laufenden Geschäftsbeziehungen ist eine wiederkehrende Prüfung üblich. Entscheidend ist, dass Sie das Ergebnis mit Datum dokumentieren."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Werden meine Eingaben gespeichert?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Nein. Die Prüfung läuft vollständig in Ihrem Browser. Es wird keine Anfrage an einen Server gesendet, es werden keine Daten gespeichert und es werden keine Cookies gesetzt."
+          }
+        }
+      ]
+    },
+    {
+      "@type": "WebApplication",
+      "name": "USt-IdNr.-Prüfer",
+      "url": "https://getnexsource.com/de/ust-idnr-pruefen/",
+      "applicationCategory": "FinanceApplication",
+      "operatingSystem": "Web",
+      "offers": {
+        "@type": "Offer",
+        "price": "0",
+        "priceCurrency": "EUR"
+      },
+      "description": "Kostenlose Format- und Prüfziffernprüfung für Umsatzsteuer-Identifikationsnummern aller EU-Mitgliedstaaten."
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Startseite",
+          "item": "https://getnexsource.com/de/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "USt-IdNr. prüfen",
+          "item": "https://getnexsource.com/de/ust-idnr-pruefen/"
+        }
+      ]
+    }
+  ]
+}
+    </script>
+  </head>
+  <body>
+    <header class="nav">
+      <div class="container nav-inner">
+        <a href="/de/" class="brand" aria-label="NexSource">
+          <span class="brand-mark" aria-hidden="true"></span>
+          <span class="brand-name">nexsource</span>
+        </a>
+        <nav class="nav-links" aria-label="Hauptnavigation">
+          <a href="/de/#research">KI-Lieferantensuche</a>
+          <a href="/de/lieferantenmanagement-software/">Lösungen</a>
+          <a href="/de/ratgeber/">Ratgeber</a>
+          <a href="/de/#pricing">Preise</a>
+        </nav>
+        <div class="nav-cta">
+          <a href="/" class="lang-switch" hreflang="en" aria-label="English">EN</a>
+          <a href="https://app.getnexsource.com" class="btn btn-ghost" data-cta="signin">Anmelden</a>
+          <a href="https://app.getnexsource.com" class="btn btn-primary" data-cta="trial-nav">Kostenlos testen</a>
+        </div>
+        <button class="nav-toggle" aria-label="Menü öffnen" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </header>
+      <nav class="breadcrumb" aria-label="Breadcrumb"><div class="container"><ol><li><a href="/de/">Startseite</a></li><li aria-current="page">USt-IdNr. prüfen</li></ol></div></nav>
+    <main>
+
+      <section class="page-hero">
+        <div class="container">
+          <span class="eyebrow">Kostenloses Tool</span>
+          <h1>USt-IdNr. prüfen</h1>
+          <p class="lead">Prüfen Sie Umsatzsteuer-Identifikationsnummern aller EU-Mitgliedstaaten auf korrekten Aufbau und Prüfziffer — sofort, kostenlos und ohne Anmeldung. Die Prüfung läuft vollständig in Ihrem Browser.</p>
+          <div class="hero-cta">
+            <a href="#pruefen" class="btn btn-primary btn-lg" data-cta="tool-hero">Jetzt prüfen</a>
+            <a href="/de/demo/" class="btn btn-secondary btn-lg" data-cta="demo-hero">Demo anfragen</a>
+          </div>
+          <ul class="hero-meta"><li>Alle 27 EU-Staaten + Nordirland</li><li>Keine Datenübertragung</li><li>Keine Cookies</li></ul>
+        </div>
+      </section>
+      <section class="section" id="pruefen">
+        <div class="container">
+          <form class="tool" id="vat-form">
+            <h2>Umsatzsteuer-Identifikationsnummer prüfen</h2>
+            <p class="tool-sub">Mit Länderkürzel eingeben, z. B. <code>DE136695976</code> oder <code>ATU13585627</code>. Leerzeichen und Punkte werden ignoriert.</p>
+            <div class="field">
+              <label for="vat-input">USt-IdNr.</label>
+              <input type="text" id="vat-input" name="vat" autocomplete="off" spellcheck="false" placeholder="DE123456789" />
+              <span class="hint">Die Prüfung erfolgt lokal im Browser. Es werden keine Daten übertragen.</span>
+            </div>
+            <button type="submit" class="btn btn-primary">Prüfen</button>
+            <div class="tool-result" id="vat-result" hidden></div>
+          </form>
+        </div>
+      </section>
+      <section class="section">
+        <div class="container">
+          <div class="prose">
+
+<div class="answer-box"><p><strong>Wichtig zu wissen:</strong> Eine Format- und Prüfziffernprüfung erkennt Tippfehler und erfundene Nummern. Ob eine Nummer tatsächlich vergeben und <em>aktuell gültig</em> ist, kann nur die offizielle Abfrage im EU-VIES-System oder beim Bundeszentralamt für Steuern beantworten. Für die Nachweisführung gegenüber dem Finanzamt brauchen Sie diese offizielle Abfrage — dokumentiert mit Datum.</p></div>
+
+<nav class="toc" aria-label="Inhaltsverzeichnis">
+  <h2>Inhalt</h2>
+  <ol><li><a href="#warum">Warum die Prüfung steuerlich relevant ist</a></li><li><a href="#aufbau">Aufbau der USt-IdNr. je EU-Land</a></li><li><a href="#vies">Einfache und qualifizierte Bestätigungsabfrage</a></li><li><a href="#prozess">Prüfung im Lieferanten-Onboarding verankern</a></li><li><a href="#fehler">Typische Fehlerquellen</a></li></ol>
+</nav>
+
+<h2 id="warum">Warum die Prüfung steuerlich relevant ist</h2>
+<p>Bei einer innergemeinschaftlichen Lieferung von Deutschland in einen anderen EU-Mitgliedstaat kann die Lieferung umsatzsteuerfrei sein. Voraussetzung ist unter anderem, dass der Abnehmer eine gültige, von einem anderen Mitgliedstaat erteilte USt-IdNr. verwendet und dass Sie diese korrekt in der Zusammenfassenden Meldung erfassen.</p>
+<p>Stellt sich später heraus, dass die Nummer zum Zeitpunkt der Lieferung ungültig war, kann die Steuerfreiheit versagt werden. Die Umsatzsteuer schulden dann Sie — nachträglich beim Kunden einzufordern gelingt selten. Deshalb ist die Prüfung kein bürokratischer Selbstzweck, sondern eine unmittelbar finanziell wirksame Kontrolle.</p>
+<div class="callout warn"><strong>Hinweis</strong><p>Diese Seite erklärt die Praxis allgemein verständlich und ersetzt keine steuerliche Beratung. Für die Beurteilung konkreter Sachverhalte wenden Sie sich bitte an Ihre Steuerberatung.</p></div>
+
+<h2 id="aufbau">Aufbau der USt-IdNr. je EU-Land</h2>
+<p>Jeder Mitgliedstaat hat ein eigenes Format. Das Länderkürzel steht immer vorn:</p>
+<div class="table-wrap">
+  <table class="data">
+    
+    <thead><tr><th scope="col">Land</th><th scope="col">Kürzel</th><th scope="col">Aufbau</th><th scope="col">Beispiel</th></tr></thead>
+    <tbody>
+      <tr><th scope="row">Deutschland</th><td>DE</td><td>9 Ziffern</td><td>DE136695976</td></tr>
+      <tr><th scope="row">Österreich</th><td>AT</td><td>U + 8 Zeichen</td><td>ATU13585627</td></tr>
+      <tr><th scope="row">Niederlande</th><td>NL</td><td>9 Ziffern + B + 2 Ziffern</td><td>NL123456782B12</td></tr>
+      <tr><th scope="row">Belgien</th><td>BE</td><td>10 Ziffern (beginnend mit 0 oder 1)</td><td>BE0776091951</td></tr>
+      <tr><th scope="row">Frankreich</th><td>FR</td><td>2 Zeichen + 9 Ziffern (SIREN)</td><td>FR40303265045</td></tr>
+      <tr><th scope="row">Italien</th><td>IT</td><td>11 Ziffern</td><td>IT00743110157</td></tr>
+      <tr><th scope="row">Spanien</th><td>ES</td><td>9 Zeichen mit Buchstaben</td><td>ESA12345674</td></tr>
+      <tr><th scope="row">Polen</th><td>PL</td><td>10 Ziffern</td><td>PL5260001246</td></tr>
+      <tr><th scope="row">Schweden</th><td>SE</td><td>12 Ziffern, endet auf 01</td><td>SE123456789701</td></tr>
+      <tr><th scope="row">Dänemark</th><td>DK</td><td>8 Ziffern</td><td>DK13585628</td></tr>
+      <tr><th scope="row">Nordirland</th><td>XI</td><td>9 oder 12 Ziffern</td><td>XI123456789</td></tr>
+    </tbody>
+  </table>
+</div>
+<p>Das Tool oben kennt die Formate aller EU-Mitgliedstaaten sowie das Sonderkürzel XI für Nordirland und prüft zusätzlich die Prüfziffer, wo ein veröffentlichtes Verfahren existiert.</p>
+
+<h2 id="vies">Einfache und qualifizierte Bestätigungsabfrage</h2>
+<div class="table-wrap">
+  <table class="data">
+    
+    <thead><tr><th scope="col"></th><th scope="col">Einfache Abfrage</th><th scope="col">Qualifizierte Abfrage</th></tr></thead>
+    <tbody>
+      <tr><th scope="row">Antwort</th><td>Nummer gültig / ungültig</td><td>zusätzlich Abgleich von Name, Ort, PLZ, Straße</td></tr>
+      <tr><th scope="row">Zuständig</th><td>EU-VIES-Portal</td><td>in Deutschland: Bundeszentralamt für Steuern</td></tr>
+      <tr><th scope="row">Nachweiswert</th><td>begrenzt</td><td>für die Nachweisführung geeignet</td></tr>
+      <tr><th scope="row">Empfehlung</th><td>für schnelle Zwischenprüfung</td><td>vor der ersten steuerfreien Lieferung und wiederkehrend</td></tr>
+    </tbody>
+  </table>
+</div>
+<p>Wichtig ist in beiden Fällen die <strong>Dokumentation</strong>: Speichern Sie das Abfrageergebnis mit Datum. Eine Prüfung, die Sie nicht belegen können, hilft in der Betriebsprüfung nicht.</p>
+
+<h2 id="prozess">Prüfung im Lieferanten-Onboarding verankern</h2>
+<p>In der Praxis scheitert es selten am Wissen und fast immer am Prozess: Die Prüfung passiert einmal beim Anlegen, danach nie wieder, und dokumentiert wird sie gar nicht. Zwei Regeln helfen:</p>
+<ol>
+  <li><strong>Prüfen, bevor die erste Bestellung rausgeht</strong> — nicht, wenn die erste Rechnung kommt.</li>
+  <li><strong>Ergebnis am Datensatz speichern</strong>, nicht im Postfach der Person, die geprüft hat.</li>
+</ol>
+<p>In <a href="/de/lieferantenmanagement-software/">NexSource</a> ist die VIES-Validierung Bestandteil der Lieferantensuche und des Onboardings: Jede gefundene oder angelegte Firma wird gegen VIES geprüft und zusätzlich gegen <a href="/de/sanktionslisten-pruefung/">EU-, OFAC- und UN-Sanktionslisten</a> abgeglichen. Das Ergebnis bleibt am Lieferanten dokumentiert.</p>
+
+<h2 id="fehler">Typische Fehlerquellen</h2>
+<ul>
+  <li><strong>Steuernummer statt USt-IdNr.</strong> Die deutsche Steuernummer (z. B. 12/345/67890) ist etwas anderes und im EU-Handel nicht verwendbar.</li>
+  <li><strong>Griechenland.</strong> Das Kürzel im Umsatzsteuerkontext ist <code>EL</code>, nicht <code>GR</code>. Das Tool oben akzeptiert beides.</li>
+  <li><strong>Vereinigtes Königreich.</strong> Seit dem Brexit sind britische Nummern nicht mehr im VIES-System — Ausnahme ist Nordirland mit dem Präfix <code>XI</code>.</li>
+  <li><strong>Zahlendreher.</strong> Genau dafür existieren Prüfziffern — das Tool oben erkennt solche Fehler sofort.</li>
+  <li><strong>Veraltete Prüfung.</strong> Nummern können entzogen werden. Eine Prüfung von vor drei Jahren sagt über heute wenig aus.</li>
+</ul>
+
+          </div>
+        </div>
+      </section>
+      <section class="section section-alt">
+        <div class="container faq-container">
+          <div class="section-head">
+            <span class="eyebrow">FAQ</span>
+            <h2>Häufige Fragen</h2>
+          </div>
+          <div class="faq">
+            <details>
+              <summary>Was ist eine Umsatzsteuer-Identifikationsnummer?</summary>
+              <p>Die USt-IdNr. ist eine EU-weit eindeutige Kennung für Unternehmen, die am innergemeinschaftlichen Waren- und Dienstleistungsverkehr teilnehmen. Sie unterscheidet sich von der Steuernummer des Finanzamts. In Deutschland beginnt sie mit „DE" und hat neun Ziffern.</p>
+            </details>
+            <details>
+              <summary>Warum muss ich die USt-IdNr. meines Geschäftspartners prüfen?</summary>
+              <p>Für eine steuerfreie innergemeinschaftliche Lieferung ist die gültige USt-IdNr. des Abnehmers eine materielle Voraussetzung. Ist sie zum Lieferzeitpunkt ungültig, kann das Finanzamt die Steuerfreiheit versagen — die Umsatzsteuer bleibt dann an Ihnen hängen. Deshalb gehört die Prüfung ins Onboarding und sollte bei laufenden Geschäftsbeziehungen wiederholt werden.</p>
+            </details>
+            <details>
+              <summary>Was prüft dieses Tool — und was nicht?</summary>
+              <p>Dieses Tool prüft offline im Browser den länderspezifischen Aufbau und, wo ein veröffentlichtes Verfahren existiert, die Prüfziffer. Es erkennt damit Tippfehler und erfundene Nummern zuverlässig. Es kann jedoch nicht feststellen, ob die Nummer tatsächlich vergeben und aktuell gültig ist — dafür ist die Abfrage im EU-VIES-System bzw. beim Bundeszentralamt für Steuern erforderlich.</p>
+            </details>
+            <details>
+              <summary>Was ist eine qualifizierte Bestätigungsabfrage?</summary>
+              <p>Bei der einfachen Abfrage erfahren Sie nur, ob die Nummer gültig ist. Bei der qualifizierten Abfrage (in Deutschland über das Bundeszentralamt für Steuern) wird zusätzlich abgeglichen, ob Name, Ort, Postleitzahl und Straße zur Nummer passen. Für die Nachweisführung gegenüber dem Finanzamt ist die qualifizierte Abfrage mit dokumentiertem Ergebnis der sichere Weg.</p>
+            </details>
+            <details>
+              <summary>Wie oft sollte man prüfen?</summary>
+              <p>Vor der ersten steuerfreien Lieferung in jedem Fall, danach in regelmäßigen Abständen — bei laufenden Geschäftsbeziehungen ist eine wiederkehrende Prüfung üblich. Entscheidend ist, dass Sie das Ergebnis mit Datum dokumentieren.</p>
+            </details>
+            <details>
+              <summary>Werden meine Eingaben gespeichert?</summary>
+              <p>Nein. Die Prüfung läuft vollständig in Ihrem Browser. Es wird keine Anfrage an einen Server gesendet, es werden keine Daten gespeichert und es werden keine Cookies gesetzt.</p>
+            </details>
+          </div>
+        </div>
+      </section>
+      <section class="section">
+        <div class="container">
+          <div class="section-head"><h2>Passend dazu</h2></div>
+          <div class="feature-grid">
+            <a class="feature feature-link" href="/de/sanktionslisten-pruefung/">
+              <h3>Sanktionslistenprüfung</h3>
+              <p>Der zweite Pflichtcheck im Onboarding: EU-, OFAC- und UN-Listen.</p>
+            </a>
+            <a class="feature feature-link" href="/de/lieferantenmanagement-software/">
+              <h3>Lieferantenmanagement-Software</h3>
+              <p>Prüfergebnisse dauerhaft am Lieferanten dokumentieren.</p>
+            </a>
+            <a class="feature feature-link" href="/de/lieferantenbewertung/">
+              <h3>Lieferantenbewertung</h3>
+              <p>Kostenloser Rechner mit gewichteten Kriterien und CSV-Export.</p>
+            </a>
+          </div>
+        </div>
+      </section>
+      <section class="cta">
+        <div class="container cta-inner">
+          <h2>Bringen Sie Ordnung in Ihren Einkauf.</h2>
+          <p>Lieferanten finden, prüfen, verwalten und bestellen — in einer Plattform. 14 Tage kostenlos, in Minuten startklar.</p>
+          <div class="cta-actions">
+            <a href="https://app.getnexsource.com" class="btn btn-primary btn-lg" data-cta="trial-band">14 Tage kostenlos testen</a>
+            <a href="/de/demo/" class="btn btn-secondary btn-lg" data-cta="demo-band">Demo anfragen</a>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="container footer-inner">
+        <div class="footer-brand">
+          <a href="/de/" class="brand">
+            <span class="brand-mark" aria-hidden="true"></span>
+            <span class="brand-name">nexsource</span>
+          </a>
+          <p>Lieferantenmanagement &amp; Einkaufssoftware für den Mittelstand.</p>
+        </div>
+        <div class="footer-cols footer-cols-wide">
+          <div>
+            <h4>Produkt</h4>
+            <a href="/de/#research">KI-Lieferantensuche</a>
+            <a href="/de/#features">Funktionen</a>
+            <a href="/de/#compliance">Compliance</a>
+            <a href="/de/#pricing">Preise</a>
+            <a href="/de/demo/">Demo anfragen</a>
+          </div>
+          <div>
+            <h4>Lösungen</h4>
+            <a href="/de/lieferantenmanagement-software/">Lieferantenmanagement-Software</a>
+            <a href="/de/einkaufssoftware-mittelstand/">Einkaufssoftware Mittelstand</a>
+            <a href="/de/lieferantenportal/">Lieferantenportal</a>
+            <a href="/de/lieferantenbewertung/">Lieferantenbewertung</a>
+            <a href="/de/sanktionslisten-pruefung/">Sanktionslistenprüfung</a>
+            <a href="/de/lksg-software/">LkSG für Zulieferer</a>
+          </div>
+          <div>
+            <h4>Ratgeber & Tools</h4>
+            <a href="/de/ratgeber/">Ratgeber</a>
+            <a href="/de/ust-idnr-pruefen/">USt-IdNr. prüfen (kostenlos)</a>
+            <a href="/de/vergleich/excel-vs-lieferantenmanagement-software/">Excel vs. Software</a>
+            <a href="/de/ratgeber/lieferantenmanagement/">Leitfaden Lieferantenmanagement</a>
+            <a href="/de/ratgeber/lieferantenaudit-checkliste/">Lieferantenaudit-Checkliste</a>
+          </div>
+          <div>
+            <h4>Rechtliches</h4>
+            <a href="/de/impressum.html">Impressum</a>
+            <a href="/de/datenschutz.html">Datenschutz</a>
+            <a href="/de/agb.html">AGB</a>
+          </div>
+          <div>
+            <h4>Sprache</h4>
+            <a href="/">English</a>
+          </div>
+        </div>
+      </div>
+      <div class="container footer-bottom">
+        <span>© <span id="year"></span> nexsource. Alle Rechte vorbehalten.</span>
+      </div>
+    </footer>
+    <a href="https://app.getnexsource.com" class="sticky-cta" data-cta="trial-sticky">14 Tage kostenlos testen</a>
+    <script src="/script.js"></script>
+    <script src="/seo.js"></script>
+    <script src="/vat.js"></script>
+    <script src="/tool-ui.js"></script>
+  </body>
+</html>

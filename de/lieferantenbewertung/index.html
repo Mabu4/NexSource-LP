@@ -1,0 +1,487 @@
+<!doctype html>
+<html lang="de">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Lieferantenbewertung: Kriterien + Rechner | NexSource</title>
+    <meta name="description" content="Lieferanten objektiv bewerten: gewichtete Kriterien, kostenloser Rechner mit CSV-Export für Excel und was ISO 9001 8.4 wirklich verlangt." />
+    <meta name="keywords" content="Lieferantenbewertung, Lieferantenbewertung Kriterien, Lieferantenbewertung Vorlage, Lieferantenbewertung Excel, Lieferantenscorecard, ISO 9001 Lieferantenbewertung" />
+    <link rel="canonical" href="https://getnexsource.com/de/lieferantenbewertung/" />
+    <link rel="alternate" hreflang="de" href="https://getnexsource.com/de/lieferantenbewertung/" />
+    <link rel="alternate" hreflang="en" href="https://getnexsource.com/supplier-evaluation/" />
+    <link rel="alternate" hreflang="x-default" href="https://getnexsource.com/supplier-evaluation/" />
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="NexSource" />
+    <meta property="og:locale" content="de_DE" />
+    <meta property="og:title" content="Lieferantenbewertung: Kriterien + Rechner | NexSource" />
+    <meta property="og:description" content="Lieferanten objektiv bewerten: gewichtete Kriterien, kostenloser Rechner mit CSV-Export für Excel und was ISO 9001 8.4 wirklich verlangt." />
+    <meta property="og:url" content="https://getnexsource.com/de/lieferantenbewertung/" />
+    <meta property="og:image" content="https://getnexsource.com/og-image.png" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Lieferantenbewertung: Kriterien + Rechner | NexSource" />
+    <meta name="twitter:description" content="Lieferanten objektiv bewerten: gewichtete Kriterien, kostenloser Rechner mit CSV-Export für Excel und was ISO 9001 8.4 wirklich verlangt." />
+    <meta name="twitter:image" content="https://getnexsource.com/og-image.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="preload"
+      as="style"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+      onload="this.onload=null;this.rel='stylesheet'"
+    />
+    <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" /></noscript>
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="apple-touch-icon" href="/favicon.svg" />
+    <meta name="theme-color" content="#4f46e5" />
+    <link rel="stylesheet" href="/styles.css" />
+    <link rel="stylesheet" href="/content.css" />
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Organization",
+      "@id": "https://getnexsource.com/#organization",
+      "name": "NexSource",
+      "url": "https://getnexsource.com/",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://getnexsource.com/favicon.svg"
+      },
+      "sameAs": []
+    },
+    {
+      "@type": "SoftwareApplication",
+      "@id": "https://getnexsource.com/#software",
+      "name": "NexSource",
+      "applicationCategory": "BusinessApplication",
+      "applicationSubCategory": "Lieferantenmanagement- und Einkaufssoftware",
+      "operatingSystem": "Web",
+      "url": "https://getnexsource.com/",
+      "description": "Lieferantenmanagement- und Einkaufssoftware für den Mittelstand: KI-Lieferantensuche mit VIES- und Sanktionslistenprüfung, Bestellungen, Verträge, Zertifikate und Lieferantenportal.",
+      "publisher": {
+        "@id": "https://getnexsource.com/#organization"
+      },
+      "offers": [
+        {
+          "@type": "Offer",
+          "name": "Starter",
+          "price": "29",
+          "priceCurrency": "EUR",
+          "category": "subscription",
+          "url": "https://getnexsource.com/de/#pricing"
+        },
+        {
+          "@type": "Offer",
+          "name": "Pro",
+          "price": "89",
+          "priceCurrency": "EUR",
+          "category": "subscription",
+          "url": "https://getnexsource.com/de/#pricing"
+        },
+        {
+          "@type": "Offer",
+          "name": "Scale",
+          "price": "199",
+          "priceCurrency": "EUR",
+          "category": "subscription",
+          "url": "https://getnexsource.com/de/#pricing"
+        }
+      ]
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Welche Kriterien gehören in eine Lieferantenbewertung?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Bewährt hat sich eine Kombination aus harten und weichen Kriterien: Liefertreue, Qualität und Preis als Kern, ergänzt um Kommunikation, Flexibilität, Problemlösung und Nachweisführung. Wichtig ist weniger die exakte Auswahl als die Konstanz — nur wenn Sie über Jahre gleich bewerten, werden Entwicklungen sichtbar."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Wie oft sollte man Lieferanten bewerten?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "A-Lieferanten mindestens jährlich, besser halbjährlich. B- und C-Lieferanten jährlich oder anlassbezogen nach einer Störung. Häufiger zu bewerten bringt selten neue Erkenntnisse, seltener macht die Bewertung wertlos."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Wie gewichtet man die Kriterien richtig?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Die Gewichtung muss zu Ihrem Geschäft passen. In der Just-in-time-Fertigung dominiert Liefertreue, im Lebensmittelbereich Qualität und Zertifizierung, im Handel oft der Preis. Als Startpunkt funktioniert 25/25/15 auf Liefertreue, Qualität und Preis, der Rest auf weiche Kriterien — genau so ist der Rechner auf dieser Seite voreingestellt."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Ist eine Lieferantenbewertung nach ISO 9001 Pflicht?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "ISO 9001 verlangt in Abschnitt 8.4, dass Sie externe Anbieter nach festgelegten Kriterien bewerten, auswählen, überwachen und die Ergebnisse dokumentieren. Wie Sie das methodisch umsetzen, bleibt Ihnen überlassen — nachweisen müssen Sie es aber. Genau daran scheitern viele Audits."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Was macht man mit dem Ergebnis?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Die Bewertung ist kein Selbstzweck. Aus ihr folgen drei mögliche Konsequenzen: strategisch ausbauen, gezielt entwickeln (mit vereinbarten Maßnahmen und Wiedervorlage) oder eine Alternative aufbauen. Eine Bewertung ohne abgeleitete Maßnahme ist verschwendete Arbeit."
+          }
+        }
+      ]
+    },
+    {
+      "@type": "WebApplication",
+      "name": "Lieferantenbewertungs-Rechner",
+      "url": "https://getnexsource.com/de/lieferantenbewertung/",
+      "applicationCategory": "BusinessApplication",
+      "operatingSystem": "Web",
+      "offers": {
+        "@type": "Offer",
+        "price": "0",
+        "priceCurrency": "EUR"
+      }
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Startseite",
+          "item": "https://getnexsource.com/de/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Lieferantenbewertung",
+          "item": "https://getnexsource.com/de/lieferantenbewertung/"
+        }
+      ]
+    }
+  ]
+}
+    </script>
+  </head>
+  <body>
+    <header class="nav">
+      <div class="container nav-inner">
+        <a href="/de/" class="brand" aria-label="NexSource">
+          <span class="brand-mark" aria-hidden="true"></span>
+          <span class="brand-name">nexsource</span>
+        </a>
+        <nav class="nav-links" aria-label="Hauptnavigation">
+          <a href="/de/#research">KI-Lieferantensuche</a>
+          <a href="/de/lieferantenmanagement-software/">Lösungen</a>
+          <a href="/de/ratgeber/">Ratgeber</a>
+          <a href="/de/#pricing">Preise</a>
+        </nav>
+        <div class="nav-cta">
+          <a href="/" class="lang-switch" hreflang="en" aria-label="English">EN</a>
+          <a href="https://app.getnexsource.com" class="btn btn-ghost" data-cta="signin">Anmelden</a>
+          <a href="https://app.getnexsource.com" class="btn btn-primary" data-cta="trial-nav">Kostenlos testen</a>
+        </div>
+        <button class="nav-toggle" aria-label="Menü öffnen" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </header>
+      <nav class="breadcrumb" aria-label="Breadcrumb"><div class="container"><ol><li><a href="/de/">Startseite</a></li><li aria-current="page">Lieferantenbewertung</li></ol></div></nav>
+    <main>
+
+      <section class="page-hero">
+        <div class="container">
+          <span class="eyebrow">Lieferantenbewertung</span>
+          <h1>Lieferantenbewertung: Kriterien, Gewichtung und kostenloser Rechner</h1>
+          <p class="lead">Bewerten Sie Lieferanten nach nachvollziehbaren Kriterien statt nach Bauchgefühl. Nutzen Sie den Rechner unten kostenlos — inklusive CSV-Export für Excel.</p>
+          <div class="hero-cta">
+            <a href="#rechner" class="btn btn-primary btn-lg" data-cta="tool-hero">Zum kostenlosen Rechner</a>
+            <a href="/de/demo/" class="btn btn-secondary btn-lg" data-cta="demo-hero">Demo anfragen</a>
+          </div>
+          <ul class="hero-meta"><li>Kostenlos, ohne Anmeldung</li><li>Läuft im Browser</li><li>CSV-Export für Excel</li></ul>
+        </div>
+      </section>
+      <section class="section" id="rechner">
+        <div class="container">
+<div class="tool" id="scorecard">
+  <h2>Lieferantenbewertung berechnen</h2>
+  <p class="tool-sub">Gewichtete Bewertung nach sieben Standardkriterien. Bewegen Sie die Regler, der Gesamtscore aktualisiert sich sofort. Export als CSV für Excel.</p>
+  <div class="field">
+    <label for="score-supplier">Lieferant (optional)</label>
+    <input type="text" id="score-supplier" placeholder="z. B. Müller GmbH" />
+  </div>
+  <div class="score-grid">
+    <div class="score-row" data-weight="25" data-name="Liefertreue">
+      <div class="crit">Liefertreue <small>Termine eingehalten, Mengen vollständig · Gewichtung 25%</small></div>
+      <input type="range" min="1" max="10" value="7" aria-label="Liefertreue" />
+      <output>7</output>
+    </div>
+    <div class="score-row" data-weight="25" data-name="Qualität">
+      <div class="crit">Qualität <small>Reklamationsquote, Spezifikationstreue · Gewichtung 25%</small></div>
+      <input type="range" min="1" max="10" value="7" aria-label="Qualität" />
+      <output>7</output>
+    </div>
+    <div class="score-row" data-weight="15" data-name="Preis & Konditionen">
+      <div class="crit">Preis & Konditionen <small>Preisniveau, Zahlungsziel, Preisstabilität · Gewichtung 15%</small></div>
+      <input type="range" min="1" max="10" value="7" aria-label="Preis & Konditionen" />
+      <output>7</output>
+    </div>
+    <div class="score-row" data-weight="10" data-name="Kommunikation">
+      <div class="crit">Kommunikation <small>Erreichbarkeit, Reaktionszeit, Proaktivität · Gewichtung 10%</small></div>
+      <input type="range" min="1" max="10" value="7" aria-label="Kommunikation" />
+      <output>7</output>
+    </div>
+    <div class="score-row" data-weight="10" data-name="Flexibilität">
+      <div class="crit">Flexibilität <small>Umgang mit Mengen- und Terminänderungen · Gewichtung 10%</small></div>
+      <input type="range" min="1" max="10" value="7" aria-label="Flexibilität" />
+      <output>7</output>
+    </div>
+    <div class="score-row" data-weight="10" data-name="Problemlösung">
+      <div class="crit">Problemlösung <small>Reaktion bei Reklamationen und Störungen · Gewichtung 10%</small></div>
+      <input type="range" min="1" max="10" value="7" aria-label="Problemlösung" />
+      <output>7</output>
+    </div>
+    <div class="score-row" data-weight="5" data-name="Nachweise & Compliance">
+      <div class="crit">Nachweise & Compliance <small>Zertifikate aktuell, Auskünfte vollständig · Gewichtung 5%</small></div>
+      <input type="range" min="1" max="10" value="7" aria-label="Nachweise & Compliance" />
+      <output>7</output>
+    </div>
+  </div>
+  <div class="score-total">
+    <div>
+      <div style="font-size:.75rem;text-transform:uppercase;letter-spacing:.07em;color:var(--text-soft)">Gesamtscore</div>
+      <div id="score-verdict" style="font-size:.9375rem;color:var(--text-muted)"></div>
+    </div>
+    <div class="big"><span id="score-total">70</span><span style="font-size:1rem;color:var(--text-soft)"> / 100</span></div>
+  </div>
+  <div class="score-actions">
+    <button type="button" class="btn btn-secondary" id="score-csv">Als CSV herunterladen</button>
+    <a href="https://app.getnexsource.com" class="btn btn-primary" data-cta="trial-tool">Bewertungen dauerhaft speichern</a>
+  </div>
+</div>
+        </div>
+      </section>
+      <section class="section">
+        <div class="container">
+          <div class="prose">
+
+<div class="answer-box"><p><strong>Kurz gesagt:</strong> Eine Lieferantenbewertung ist die regelmäßige, kriterienbasierte Beurteilung Ihrer Lieferanten. ISO 9001 verlangt sie in Abschnitt 8.4. Praktisch nützlich wird sie erst, wenn die Kriterien gewichtet, über Jahre konstant und mit konkreten Maßnahmen verknüpft sind.</p></div>
+
+<nav class="toc" aria-label="Inhaltsverzeichnis">
+  <h2>Inhalt</h2>
+  <ol><li><a href="#warum">Warum bewerten — über die Norm hinaus</a></li><li><a href="#kriterien">Die sieben Standardkriterien</a></li><li><a href="#gewichtung">Gewichtung nach Branche</a></li><li><a href="#skala">Bewertungsskala und Datenquellen</a></li><li><a href="#abc">Von der Note zur Entscheidung</a></li><li><a href="#fehler">Fünf häufige Fehler</a></li><li><a href="#iso">Was ISO 9001 tatsächlich verlangt</a></li></ol>
+</nav>
+
+<h2 id="warum">Warum bewerten — über die Norm hinaus</h2>
+<p>Viele Unternehmen bewerten Lieferanten, weil ein Auditor es verlangt. Das führt zu Bewertungen, die einmal im Jahr in einer Excel-Datei entstehen und danach niemanden interessieren. Der eigentliche Nutzen liegt woanders:</p>
+<ul>
+  <li><strong>Frühwarnsystem.</strong> Ein Lieferant, dessen Liefertreue über drei Quartale von 9 auf 6 fällt, hat ein Problem — Sie sehen es, bevor die Produktion steht.</li>
+  <li><strong>Verhandlungsgrundlage.</strong> „Ihre Reklamationsquote liegt bei 4,2 %, Ihr Wettbewerber bei 1,1 %" ist ein anderes Gespräch als „wir sind unzufrieden".</li>
+  <li><strong>Objektivierung.</strong> Bewertung verhindert, dass ein einzelner Vorfall die Beziehung zu einem sonst starken Lieferanten überschattet — oder umgekehrt.</li>
+  <li><strong>Nachfolge.</strong> Wenn Wissen über Lieferanten dokumentiert ist, ist ein Personalwechsel im Einkauf kein Risiko mehr.</li>
+</ul>
+
+<h2 id="kriterien">Die sieben Standardkriterien</h2>
+<div class="table-wrap">
+  <table class="data">
+    
+    <thead><tr><th scope="col">Kriterium</th><th scope="col">Was gemessen wird</th><th scope="col">Datenquelle</th></tr></thead>
+    <tbody>
+      <tr><th scope="row">Liefertreue</th><td>Termintreue und Mengentreue je Bestellung</td><td>Bestellhistorie: Soll- vs. Ist-Liefertermin</td></tr>
+      <tr><th scope="row">Qualität</th><td>Reklamationsquote, Spezifikationsabweichungen</td><td>QS-Meldungen, Wareneingangsprüfung</td></tr>
+      <tr><th scope="row">Preis & Konditionen</th><td>Preisniveau im Wettbewerbsvergleich, Zahlungsziel, Preisstabilität</td><td>Angebotsvergleich, Preishistorie</td></tr>
+      <tr><th scope="row">Kommunikation</th><td>Erreichbarkeit, Reaktionszeit, proaktive Information bei Verzug</td><td>Erfahrungswert Einkauf</td></tr>
+      <tr><th scope="row">Flexibilität</th><td>Umgang mit kurzfristigen Mengen- und Terminänderungen</td><td>Erfahrungswert Disposition</td></tr>
+      <tr><th scope="row">Problemlösung</th><td>Verhalten bei Reklamationen: Ursachenanalyse, Abstellmaßnahmen</td><td>Reklamationsvorgänge</td></tr>
+      <tr><th scope="row">Nachweise & Compliance</th><td>Zertifikate aktuell, Selbstauskünfte vollständig und pünktlich</td><td>Lieferantenakte</td></tr>
+    </tbody>
+  </table>
+</div>
+
+<h2 id="gewichtung">Gewichtung nach Branche</h2>
+<p>Die Gewichtung entscheidet über die Aussagekraft. Vier bewährte Profile:</p>
+<div class="table-wrap">
+  <table class="data">
+    
+    <thead><tr><th scope="col">Branche</th><th scope="col">Schwerpunkt</th><th scope="col">Typische Gewichtung</th></tr></thead>
+    <tbody>
+      <tr><th scope="row">Serienfertigung / JIT</th><td>Liefertreue dominiert — ein Stillstand kostet mehr als jeder Preisvorteil</td><td>Liefertreue 35 %, Qualität 30 %, Preis 10 %</td></tr>
+      <tr><th scope="row">Lebensmittel</th><td>Qualität und Nachweise sind existenziell</td><td>Qualität 35 %, Nachweise 20 %, Liefertreue 20 %</td></tr>
+      <tr><th scope="row">Handel / Import</th><td>Preis und Verfügbarkeit</td><td>Preis 30 %, Liefertreue 25 %, Qualität 20 %</td></tr>
+      <tr><th scope="row">Projektgeschäft / Bau</th><td>Flexibilität und Problemlösung</td><td>Flexibilität 25 %, Problemlösung 20 %, Termintreue 25 %</td></tr>
+    </tbody>
+  </table>
+</div>
+<div class="callout"><strong>Wichtig</strong><p>Ändern Sie die Gewichtung nicht jährlich. Sonst vergleichen Sie Äpfel mit Birnen und der wertvollste Teil der Bewertung — der Zeitverlauf — geht verloren.</p></div>
+
+<h2 id="skala">Bewertungsskala und Datenquellen</h2>
+<p>Eine Skala von 1–10 hat sich durchgesetzt, weil sie fein genug für Veränderungen und grob genug für schnelle Einschätzungen ist. Entscheidend ist, dass die Skala <strong>definiert</strong> ist. Ohne Definition bewertet jede Person anders:</p>
+<div class="table-wrap">
+  <table class="data">
+    
+    <thead><tr><th scope="col">Wert</th><th scope="col">Bedeutung</th><th scope="col">Beispiel Liefertreue</th></tr></thead>
+    <tbody>
+      <tr><th scope="row">9–10</th><td>Übertrifft Erwartungen</td><td>≥ 98 % termingerecht</td></tr>
+      <tr><th scope="row">7–8</th><td>Erfüllt Erwartungen</td><td>92–97 % termingerecht</td></tr>
+      <tr><th scope="row">5–6</th><td>Teilweise mangelhaft, Maßnahmen nötig</td><td>85–91 % termingerecht</td></tr>
+      <tr><th scope="row">3–4</th><td>Deutlich mangelhaft</td><td>70–84 % termingerecht</td></tr>
+      <tr><th scope="row">1–2</th><td>Nicht akzeptabel</td><td>< 70 % termingerecht</td></tr>
+    </tbody>
+  </table>
+</div>
+<p>Harte Kriterien sollten aus Daten kommen, nicht aus Erinnerung. Wenn Ihre Bestellungen in einem System mit Statushistorie laufen, lässt sich Liefertreue direkt ableiten — das ist einer der Gründe, warum sich <a href="/de/einkaufssoftware-mittelstand/">strukturierte Bestellprozesse</a> und belastbare Bewertung gegenseitig bedingen.</p>
+
+<h2 id="abc">Von der Note zur Entscheidung</h2>
+<p>Der Score allein ändert nichts. Legen Sie vorab fest, was aus welchem Ergebnis folgt:</p>
+<div class="table-wrap">
+  <table class="data">
+    
+    <thead><tr><th scope="col">Score</th><th scope="col">Einstufung</th><th scope="col">Konsequenz</th></tr></thead>
+    <tbody>
+      <tr><th scope="row">85–100</th><td>A-Lieferant</td><td>Strategisch ausbauen, Volumen bündeln, Rahmenvertrag prüfen</td></tr>
+      <tr><th scope="row">70–84</th><td>B-Lieferant</td><td>Solide. Ein bis zwei konkrete Entwicklungsziele vereinbaren</td></tr>
+      <tr><th scope="row">50–69</th><td>C-Lieferant</td><td>Maßnahmenplan mit Frist, Wiedervorlage nach sechs Monaten</td></tr>
+      <tr><th scope="row">unter 50</th><td>Risiko</td><td>Zweitquelle aufbauen, Abhängigkeit aktiv reduzieren</td></tr>
+    </tbody>
+  </table>
+</div>
+
+<h2 id="fehler">Fünf häufige Fehler</h2>
+<ol>
+  <li><strong>Nur einmal jährlich, nur für das Audit.</strong> Die Bewertung entsteht im Dezember aus dem Gedächtnis und ist wertlos.</li>
+  <li><strong>Alle Kriterien gleich gewichtet.</strong> Dann kompensiert ein guter Preis eine miserable Liefertreue — betriebswirtschaftlich meist falsch.</li>
+  <li><strong>Nur eine Person bewertet.</strong> Qualität gehört zur QS, Liefertreue zur Disposition, Konditionen zum Einkauf. Bewertung ist Teamarbeit.</li>
+  <li><strong>Keine Rückmeldung an den Lieferanten.</strong> Ein Lieferant, der seine Bewertung nie sieht, kann sich nicht verbessern. Das Feedbackgespräch ist der eigentliche Hebel.</li>
+  <li><strong>Keine Historie.</strong> Ohne Vorjahresvergleich sehen Sie Niveau, aber keine Entwicklung — und Entwicklung ist die interessantere Information.</li>
+</ol>
+
+<h2 id="iso">Was ISO 9001 tatsächlich verlangt</h2>
+<p>ISO 9001:2015 Abschnitt 8.4.1 verlangt, dass Sie Kriterien für Bewertung, Auswahl, Überwachung der Leistung und Neubewertung externer Anbieter festlegen und anwenden — und dass Sie die Ergebnisse sowie daraus entstehende notwendige Maßnahmen dokumentiert aufbewahren.</p>
+<p>Drei Dinge müssen also nachweisbar sein: <strong>festgelegte Kriterien</strong>, <strong>angewandte Bewertung</strong> und <strong>abgeleitete Maßnahmen</strong>. Der Rechner auf dieser Seite deckt den zweiten Punkt ab. Für die dauerhafte Dokumentation mit Historie, Verantwortlichkeiten und Wiedervorlage brauchen Sie ein System — genau dafür gibt es die Lieferantenbewertung in <a href="/de/lieferantenmanagement-software/">NexSource</a>.</p>
+
+          </div>
+        </div>
+      </section>
+      <section class="section section-alt">
+        <div class="container faq-container">
+          <div class="section-head">
+            <span class="eyebrow">FAQ</span>
+            <h2>Häufige Fragen</h2>
+          </div>
+          <div class="faq">
+            <details>
+              <summary>Welche Kriterien gehören in eine Lieferantenbewertung?</summary>
+              <p>Bewährt hat sich eine Kombination aus harten und weichen Kriterien: Liefertreue, Qualität und Preis als Kern, ergänzt um Kommunikation, Flexibilität, Problemlösung und Nachweisführung. Wichtig ist weniger die exakte Auswahl als die Konstanz — nur wenn Sie über Jahre gleich bewerten, werden Entwicklungen sichtbar.</p>
+            </details>
+            <details>
+              <summary>Wie oft sollte man Lieferanten bewerten?</summary>
+              <p>A-Lieferanten mindestens jährlich, besser halbjährlich. B- und C-Lieferanten jährlich oder anlassbezogen nach einer Störung. Häufiger zu bewerten bringt selten neue Erkenntnisse, seltener macht die Bewertung wertlos.</p>
+            </details>
+            <details>
+              <summary>Wie gewichtet man die Kriterien richtig?</summary>
+              <p>Die Gewichtung muss zu Ihrem Geschäft passen. In der Just-in-time-Fertigung dominiert Liefertreue, im Lebensmittelbereich Qualität und Zertifizierung, im Handel oft der Preis. Als Startpunkt funktioniert 25/25/15 auf Liefertreue, Qualität und Preis, der Rest auf weiche Kriterien — genau so ist der Rechner auf dieser Seite voreingestellt.</p>
+            </details>
+            <details>
+              <summary>Ist eine Lieferantenbewertung nach ISO 9001 Pflicht?</summary>
+              <p>ISO 9001 verlangt in Abschnitt 8.4, dass Sie externe Anbieter nach festgelegten Kriterien bewerten, auswählen, überwachen und die Ergebnisse dokumentieren. Wie Sie das methodisch umsetzen, bleibt Ihnen überlassen — nachweisen müssen Sie es aber. Genau daran scheitern viele Audits.</p>
+            </details>
+            <details>
+              <summary>Was macht man mit dem Ergebnis?</summary>
+              <p>Die Bewertung ist kein Selbstzweck. Aus ihr folgen drei mögliche Konsequenzen: strategisch ausbauen, gezielt entwickeln (mit vereinbarten Maßnahmen und Wiedervorlage) oder eine Alternative aufbauen. Eine Bewertung ohne abgeleitete Maßnahme ist verschwendete Arbeit.</p>
+            </details>
+          </div>
+        </div>
+      </section>
+      <section class="section">
+        <div class="container">
+          <div class="section-head"><h2>Passend dazu</h2></div>
+          <div class="feature-grid">
+            <a class="feature feature-link" href="/de/lieferantenmanagement-software/">
+              <h3>Lieferantenmanagement-Software</h3>
+              <p>Bewertungen dauerhaft speichern, mit Historie und Verantwortlichkeit.</p>
+            </a>
+            <a class="feature feature-link" href="/de/ratgeber/lieferantenaudit-checkliste/">
+              <h3>Lieferantenaudit-Checkliste</h3>
+              <p>Der nächste Schritt nach der Bewertung: das strukturierte Audit.</p>
+            </a>
+            <a class="feature feature-link" href="/de/lieferantenportal/">
+              <h3>Lieferantenportal</h3>
+              <p>Nachweise und Stammdaten kommen direkt vom Lieferanten.</p>
+            </a>
+          </div>
+        </div>
+      </section>
+      <section class="cta">
+        <div class="container cta-inner">
+          <h2>Bringen Sie Ordnung in Ihren Einkauf.</h2>
+          <p>Lieferanten finden, prüfen, verwalten und bestellen — in einer Plattform. 14 Tage kostenlos, in Minuten startklar.</p>
+          <div class="cta-actions">
+            <a href="https://app.getnexsource.com" class="btn btn-primary btn-lg" data-cta="trial-band">14 Tage kostenlos testen</a>
+            <a href="/de/demo/" class="btn btn-secondary btn-lg" data-cta="demo-band">Demo anfragen</a>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="container footer-inner">
+        <div class="footer-brand">
+          <a href="/de/" class="brand">
+            <span class="brand-mark" aria-hidden="true"></span>
+            <span class="brand-name">nexsource</span>
+          </a>
+          <p>Lieferantenmanagement &amp; Einkaufssoftware für den Mittelstand.</p>
+        </div>
+        <div class="footer-cols footer-cols-wide">
+          <div>
+            <h4>Produkt</h4>
+            <a href="/de/#research">KI-Lieferantensuche</a>
+            <a href="/de/#features">Funktionen</a>
+            <a href="/de/#compliance">Compliance</a>
+            <a href="/de/#pricing">Preise</a>
+            <a href="/de/demo/">Demo anfragen</a>
+          </div>
+          <div>
+            <h4>Lösungen</h4>
+            <a href="/de/lieferantenmanagement-software/">Lieferantenmanagement-Software</a>
+            <a href="/de/einkaufssoftware-mittelstand/">Einkaufssoftware Mittelstand</a>
+            <a href="/de/lieferantenportal/">Lieferantenportal</a>
+            <a href="/de/lieferantenbewertung/">Lieferantenbewertung</a>
+            <a href="/de/sanktionslisten-pruefung/">Sanktionslistenprüfung</a>
+            <a href="/de/lksg-software/">LkSG für Zulieferer</a>
+          </div>
+          <div>
+            <h4>Ratgeber & Tools</h4>
+            <a href="/de/ratgeber/">Ratgeber</a>
+            <a href="/de/ust-idnr-pruefen/">USt-IdNr. prüfen (kostenlos)</a>
+            <a href="/de/vergleich/excel-vs-lieferantenmanagement-software/">Excel vs. Software</a>
+            <a href="/de/ratgeber/lieferantenmanagement/">Leitfaden Lieferantenmanagement</a>
+            <a href="/de/ratgeber/lieferantenaudit-checkliste/">Lieferantenaudit-Checkliste</a>
+          </div>
+          <div>
+            <h4>Rechtliches</h4>
+            <a href="/de/impressum.html">Impressum</a>
+            <a href="/de/datenschutz.html">Datenschutz</a>
+            <a href="/de/agb.html">AGB</a>
+          </div>
+          <div>
+            <h4>Sprache</h4>
+            <a href="/">English</a>
+          </div>
+        </div>
+      </div>
+      <div class="container footer-bottom">
+        <span>© <span id="year"></span> nexsource. Alle Rechte vorbehalten.</span>
+      </div>
+    </footer>
+    <a href="https://app.getnexsource.com" class="sticky-cta" data-cta="trial-sticky">14 Tage kostenlos testen</a>
+    <script src="/script.js"></script>
+    <script src="/seo.js"></script>
+    <script src="/tool-ui.js"></script>
+  </body>
+</html>
