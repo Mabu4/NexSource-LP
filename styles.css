@@ -66,6 +66,11 @@ h4 {
   margin: 0;
   letter-spacing: -0.02em;
   color: var(--text);
+  /* German compounds ("Lieferantenmanagement-Software") are longer than a
+     phone-width heading box and used to push the page into horizontal scroll.
+     break-word lets them wrap; automatic hyphenation is deliberately NOT used
+     because it splits the brand name into "Nex-Source". */
+  overflow-wrap: break-word;
 }
 
 h1 {
@@ -1033,6 +1038,13 @@ p {
   order: -1;
 }
 
+/* Decorative blobs are positioned outside the grid and used to add ~16px of
+   horizontal overflow at tablet widths. The hero already clips them. */
+.split,
+.split-media {
+  overflow: hidden;
+}
+
 .split-copy h2 {
   font-size: clamp(1.55rem, 2.6vw, 2.1rem);
 }
@@ -1250,6 +1262,53 @@ p {
 
 /* ---------- Responsive ---------- */
 @media (max-width: 960px) {
+  /* The full nav (links + sign in + trial + language) stops fitting next to
+     the brand around 960px. Below that it collapses into the burger menu;
+     leaving it expanded pushed the burger off-screen and made every page
+     scroll horizontally. */
+  .nav-links,
+  .nav-cta .btn-ghost {
+    display: none;
+  }
+
+  .nav-toggle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 0 0 36px;
+  }
+
+  /* Brand + language switch + trial button + burger no longer fit side by
+     side below ~720px and used to push the burger off-screen, which made the
+     whole page scroll horizontally. Tighten first, drop the trial button on
+     the narrowest phones — the hero CTA and the sticky CTA cover it there. */
+  .nav-inner {
+    gap: 12px;
+  }
+
+  .nav-cta {
+    gap: 8px;
+  }
+
+  .nav-cta .btn-primary {
+    padding: 9px 14px;
+    font-size: 0.875rem;
+    white-space: nowrap;
+  }
+
+  .nav.menu-open .nav-links {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 68px;
+    left: 0;
+    right: 0;
+    background: #fff;
+    border-bottom: 1px solid var(--border);
+    padding: 16px 24px 22px;
+    gap: 12px;
+  }
+
   .split-inner {
     grid-template-columns: 1fr;
     gap: 44px;
@@ -1285,30 +1344,6 @@ p {
 }
 
 @media (max-width: 720px) {
-  .nav-links,
-  .nav-cta .btn-ghost {
-    display: none;
-  }
-
-  .nav-toggle {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-
-  .nav.menu-open .nav-links {
-    display: flex;
-    flex-direction: column;
-    position: absolute;
-    top: 68px;
-    left: 0;
-    right: 0;
-    background: #fff;
-    border-bottom: 1px solid var(--border);
-    padding: 16px 24px 22px;
-    gap: 12px;
-  }
-
   .section {
     padding: 70px 0;
   }
@@ -1346,5 +1381,15 @@ p {
 
   .footer-cols {
     grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width: 560px) {
+  .nav-cta .btn-primary {
+    display: none;
+  }
+
+  .nav-inner {
+    gap: 10px;
   }
 }
