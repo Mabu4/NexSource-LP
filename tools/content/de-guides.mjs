@@ -27,6 +27,24 @@ function article(page) {
 /* ---------------- Hub ---------------- */
 const POSTS = [
   [
+    '/de/lieferantenauswahl/',
+    'Tool',
+    'Lieferantenauswahl: Prozess, Kriterien und Nutzwertanalyse',
+    'Sieben Schritte von der Longlist zur Entscheidung — mit kostenlosem Rechner, der bis zu drei Angebote vergleicht.',
+  ],
+  [
+    '/de/lieferantendatenbank/',
+    'Vorlage',
+    'Lieferantendatenbank aufbauen: Felder und Excel-Vorlage',
+    'Welche 32 Felder hineingehören, kostenlose Vorlage zum Download und der Weg zur digitalen Lieferantenakte.',
+  ],
+  [
+    '/de/ratgeber/lieferantenentwicklung/',
+    'Leitfaden',
+    'Lieferantenentwicklung: Methoden, Ablauf und Kennzahlen',
+    'Einen bestehenden Lieferanten gezielt verbessern — wann es sich lohnt und wie Sie den Erfolg messen.',
+  ],
+  [
     '/de/lieferanten-finden/',
     'Leitfaden',
     'Lieferanten finden: 7 Wege im Vergleich',
@@ -142,7 +160,7 @@ export const guideLieferantenmanagement = article({
   body: `
 ${hero({
   lang: 'de',
-  eyebrow: 'Leitfaden · Lesezeit ca. 9 Min.',
+  eyebrow: 'Leitfaden · 9 Min. Lesezeit · Stand: September 2026',
   h1: 'Lieferantenmanagement: der komplette Leitfaden für den Mittelstand',
   lead: 'Der gesamte Lebenszyklus einer Lieferantenbeziehung in sieben Phasen — mit klaren Verantwortlichkeiten, den Kennzahlen, die wirklich etwas aussagen, und den Fehlern, die im Mittelstand am häufigsten passieren.',
 })}
@@ -280,7 +298,7 @@ export const guideQualifizierung = article({
   body: `
 ${hero({
   lang: 'de',
-  eyebrow: 'Prozess · Lesezeit ca. 7 Min.',
+  eyebrow: 'Prozess · 7 Min. Lesezeit · Stand: September 2026',
   h1: 'Lieferantenqualifizierung in 6 Schritten',
   lead: 'Die Prüfung, die vor der ersten Bestellung passieren muss — abgestuft nach Risiko, damit Sie bei kritischen Lieferanten gründlich und bei Bürobedarf schnell sind.',
 })}
@@ -387,11 +405,13 @@ export const guideAudit = article({
   body: `
 ${hero({
   lang: 'de',
-  eyebrow: 'Checkliste · Lesezeit ca. 8 Min.',
+  eyebrow: 'Checkliste · 8 Min. Lesezeit · Stand: September 2026',
   h1: 'Lieferantenaudit: Ablauf, Fragenkatalog und Checkliste',
   lead: 'Von der Vorbereitung über den Audittag bis zur Maßnahmenverfolgung — inklusive eines Fragenkatalogs, den Sie direkt übernehmen können.',
 })}
 ${prose(`
+<p class="print-btn"><button type="button" class="btn btn-secondary" onclick="window.print()">Checkliste drucken oder als PDF speichern</button></p>
+
 ${answerBox('<strong>Kurz gesagt:</strong> Ein gutes Lieferantenaudit besteht zu einem Drittel aus Vorbereitung, zu einem Drittel aus dem Termin und zu einem Drittel aus der Nachverfolgung. Der häufigste Fehler ist, das letzte Drittel wegzulassen — dann ist das Audit dokumentierte Beschäftigung ohne Wirkung.')}
 
 ${toc('de', [

@@ -19,6 +19,7 @@ import * as deTools from './content/de-tools.mjs';
 import * as deGuides from './content/de-guides.mjs';
 import * as deMisc from './content/de-misc.mjs';
 import * as deFinden from './content/de-finden.mjs';
+import * as deGrowth from './content/de-growth.mjs';
 import * as en from './content/en.mjs';
 
 const ROOT = join(dirname(fileURLToPath(import.meta.url)), '..');
@@ -30,6 +31,7 @@ const PAGES = [
   ...Object.values(deGuides),
   ...Object.values(deMisc),
   ...Object.values(deFinden),
+  ...Object.values(deGrowth),
   ...Object.values(en),
 ].filter((p) => p && p.path);
 

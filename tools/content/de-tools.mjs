@@ -1,4 +1,4 @@
-import { faqSchema, faqHtml, relatedHtml, softwareSchema, SITE } from '../layout.mjs';
+import { faqSchema, faqHtml, relatedHtml, softwareSchema, SITE, APP } from '../layout.mjs';
 import { hero, prose, table, callout, toc, answerBox } from '../blocks.mjs';
 
 const M = ['14 Tage kostenlos', 'Keine Kreditkarte nötig', 'Unbegrenzte Nutzer', 'EU-Hosting, DSGVO-konform'];
@@ -46,7 +46,7 @@ ${criteria
   </div>
   <div class="score-actions">
     <button type="button" class="btn btn-secondary" id="score-csv">${de ? 'Als CSV herunterladen' : 'Download as CSV'}</button>
-    <a href="https://app.getnexsource.com" class="btn btn-primary" data-cta="trial-tool">${
+    <a href="${APP}" class="btn btn-primary" data-cta="trial-tool">${
       de ? 'Bewertungen dauerhaft speichern' : 'Store evaluations permanently'
     }</a>
   </div>

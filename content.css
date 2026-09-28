@@ -651,3 +651,148 @@ table.data .no {
 .mail-checks li {
   color: var(--text-muted);
 }
+
+/* ---------- Supplier comparison (Nutzwertanalyse) ---------- */
+.nwa-wrap {
+  overflow-x: auto;
+  margin: 0 -0.25rem;
+  padding: 0 0.25rem;
+}
+table.nwa {
+  width: 100%;
+  min-width: 560px;
+  border-collapse: collapse;
+  font-size: 0.9375rem;
+}
+table.nwa th,
+table.nwa td {
+  padding: 0.45rem 0.4rem;
+  border-bottom: 1px solid var(--border);
+  text-align: center;
+  vertical-align: middle;
+}
+table.nwa th:first-child,
+table.nwa td:first-child {
+  text-align: left;
+  width: 32%;
+  min-width: 200px;
+}
+table.nwa thead th {
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--text-soft);
+  font-weight: 600;
+}
+table.nwa input {
+  width: 100%;
+  font: inherit;
+  font-size: 0.9375rem;
+  padding: 0.45rem 0.5rem;
+  border: 1px solid var(--border-strong);
+  border-radius: var(--radius-sm);
+  background: var(--bg);
+  color: var(--text);
+  text-align: center;
+}
+table.nwa input.nwa-crit,
+table.nwa input.nwa-name {
+  text-align: left;
+}
+table.nwa input:focus {
+  outline: 2px solid var(--accent);
+  outline-offset: 1px;
+}
+table.nwa .nwa-weight {
+  max-width: 72px;
+}
+table.nwa .nwa-score {
+  max-width: 64px;
+}
+table.nwa tfoot td {
+  border-bottom: 0;
+  padding-top: 0.8rem;
+  font-weight: 700;
+}
+.nwa-total {
+  display: inline-block;
+  min-width: 3rem;
+  padding: 0.3rem 0.6rem;
+  border-radius: 999px;
+  font-size: 1.125rem;
+  font-variant-numeric: tabular-nums;
+  background: var(--bg-alt);
+}
+.nwa-total.best {
+  background: var(--accent);
+  color: #fff;
+}
+.nwa-weightsum[data-ok='false'] {
+  color: var(--warn);
+}
+.nwa-verdict {
+  margin-top: 1rem;
+  font-size: 0.9375rem;
+  color: var(--text);
+  min-height: 1.4em;
+}
+
+/* ---------- Page meta line (updated date) ---------- */
+.updated {
+  margin-top: 1rem;
+  font-size: 0.8125rem;
+  color: var(--text-soft);
+}
+
+/* ---------- Print: checklists come out as a clean document ---------- */
+.print-btn {
+  margin: 0 0 1.5rem;
+}
+@media print {
+  .nav,
+  .breadcrumb,
+  .footer,
+  .sticky-cta,
+  .cta,
+  .hero-cta,
+  .toc,
+  .print-btn,
+  .faq-container,
+  .section.section-alt,
+  .feature-grid {
+    display: none !important;
+  }
+  body {
+    font-size: 11pt;
+    color: #000;
+  }
+  .page-hero {
+    background: none;
+    padding: 0 0 1rem;
+  }
+  .section {
+    padding: 0.5rem 0;
+  }
+  .prose {
+    max-width: none;
+  }
+  .prose a {
+    color: #000;
+    text-decoration: none;
+  }
+  .prose ul li::before {
+    content: '☐ ';
+  }
+  .prose ul {
+    list-style: none;
+    padding-left: 0;
+  }
+  h2,
+  h3 {
+    break-after: avoid;
+  }
+  .table-wrap,
+  .callout {
+    break-inside: avoid;
+  }
+}

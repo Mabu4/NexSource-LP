@@ -2,7 +2,17 @@
 // Output is plain static HTML committed to the repo — hosting stays a static file server.
 
 export const SITE = 'https://getnexsource.com';
-export const APP = 'https://app.getnexsource.com';
+// Trial CTAs go straight to registration: the app root redirects anonymous
+// visitors to the login form ("Willkommen zurück"), which is the wrong first
+// screen for someone who just clicked "start free trial".
+export const APP = 'https://app.getnexsource.com/register';
+export const APP_LOGIN = 'https://app.getnexsource.com/login';
+
+// Until www.getnexsource.com 301-redirects at the hosting level, send it to
+// the apex from the client. Search Console showed every German page indexed
+// under www while the canonicals point to the apex, splitting the signals.
+export const WWW_REDIRECT =
+  "<script>if(location.hostname==='www.getnexsource.com')location.replace('https://getnexsource.com'+location.pathname+location.search+location.hash)</script>";
 
 const T = {
   de: {
@@ -73,9 +83,11 @@ const FOOTER = {
       ['/de/#compliance', 'Compliance'],
       ['/de/#pricing', 'Preise'],
       ['/de/demo/', 'Demo anfragen'],
+      ['/de/ueber-uns/', 'Über uns'],
     ],
     solutions: [
       ['/de/lieferanten-finden/', 'Lieferanten finden'],
+      ['/de/lieferantenauswahl/', 'Lieferantenauswahl'],
       ['/de/lieferantenmanagement-software/', 'Lieferantenmanagement-Software'],
       ['/de/einkaufssoftware-mittelstand/', 'Einkaufssoftware Mittelstand'],
       ['/de/lieferantenportal/', 'Lieferantenportal'],
@@ -86,6 +98,7 @@ const FOOTER = {
     guides: [
       ['/de/ratgeber/', 'Ratgeber'],
       ['/de/ust-idnr-pruefen/', 'USt-IdNr. prüfen (kostenlos)'],
+      ['/de/lieferantendatenbank/', 'Lieferantendatenbank-Vorlage'],
       ['/de/vergleich/excel-vs-lieferantenmanagement-software/', 'Excel vs. Software'],
       ['/de/ratgeber/lieferantenmanagement/', 'Leitfaden Lieferantenmanagement'],
       ['/de/ratgeber/lieferantenaudit-checkliste/', 'Lieferantenaudit-Checkliste'],
@@ -104,6 +117,7 @@ const FOOTER = {
       ['/#compliance', 'Compliance'],
       ['/#pricing', 'Pricing'],
       ['/demo/', 'Book a demo'],
+      ['/about/', 'About'],
     ],
     solutions: [
       ['/supplier-management-software/', 'Supplier management software'],
@@ -152,7 +166,7 @@ function nav(lang) {
         </nav>
         <div class="nav-cta">
           <a href="${other}" class="lang-switch" hreflang="${otherLang}" aria-label="${otherLang === 'de' ? 'Deutsch' : 'English'}">${otherLabel}</a>
-          <a href="${APP}" class="btn btn-ghost" data-cta="signin">${t.signin}</a>
+          <a href="${APP_LOGIN}" class="btn btn-ghost" data-cta="signin">${t.signin}</a>
           <a href="${APP}" class="btn btn-primary" data-cta="trial-nav">${t.trial}</a>
         </div>
         <button class="nav-toggle" aria-label="${lang === 'de' ? 'Menü öffnen' : 'Open menu'}" aria-expanded="false">
@@ -355,6 +369,7 @@ export function render(page) {
 <html lang="${lang}">
   <head>
     <meta charset="utf-8" />
+    ${WWW_REDIRECT}
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>${esc(page.title)}</title>
     <meta name="description" content="${esc(page.description)}" />${page.keywords ? `\n    <meta name="keywords" content="${esc(page.keywords)}" />` : ''}${page.noindex ? '\n    <meta name="robots" content="noindex,follow" />' : ''}

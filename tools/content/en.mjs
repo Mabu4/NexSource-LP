@@ -19,7 +19,7 @@ export const supplierManagement = {
   title: 'Supplier Management Software for European SMBs | NexSource',
   description:
     'Supplier management built for Europe: VIES VAT checks, EU sanctions screening, certificate alerts, orders and a supplier portal. EU-hosted, from €29/month.',
-  keywords: 'supplier management software, supplier management system, supplier management software Europe, SRM software, supplier information management software, vendor management software SMB',
+  keywords: 'supplier management software, supplier management system, supplier information management, supplier management software Europe, SRM software, vendor management software SMB',
   crumbs: [['/supplier-management-software/', 'Supplier management software']],
   schema: [softwareSchema('en'), faqSchema(faq1)],
   body: `
@@ -47,12 +47,16 @@ ${table(
 
 ${toc('en', [
   ['europe', 'Why "built for Europe" matters'],
+  ['sim', 'Supplier information management (SIM)'],
   ['problem', 'Why spreadsheets stop working'],
   ['capabilities', 'What the software has to cover'],
   ['modules', 'The NexSource modules'],
   ['criteria', 'How to choose'],
   ['pricing', 'What supplier management software costs'],
 ])}
+
+<h2 id="sim">Supplier information management (SIM)</h2>
+<p>Supplier information management is the part of supplier management that keeps supplier data complete, current and trustworthy: legal entity and VAT ID, contacts, bank details, certificates and their expiry dates, contracts, and the results of every check. NexSource covers SIM end to end — and the <a href="/supplier-portal/">supplier portal</a> lets suppliers maintain their own data, with every change subject to your approval, which is the only way supplier information stays current over time.</p>
 
 <h2 id="problem">Why spreadsheets stop working</h2>
 <p>Almost every mid-sized company starts with a spreadsheet, and that works — right up to the point where more than one person uses it. After that the failures are remarkably predictable:</p>
@@ -489,7 +493,7 @@ ${relatedHtml('en', [
 
 /* ---------------- Guides hub + pillar ---------------- */
 const EN_POSTS = [
-  ['/guides/supplier-management/', 'Guide', 'Supplier management: a practical guide for SMBs', 'The full supplier lifecycle in seven phases, with ownership, metrics that matter and the usual mistakes.'],
+  ['/guides/supplier-management/', 'Guide', 'The supplier management process: 7 steps', 'The full supplier lifecycle in seven steps, with ownership, metrics that matter and the usual mistakes.'],
   ['/supplier-evaluation/', 'Tool', 'Supplier evaluation: criteria and free calculator', 'Weighted scoring across seven standard criteria, in your browser, with CSV export.'],
   ['/vat-number-validator/', 'Tool', 'EU VAT number validator', 'Check format and check digit for all EU member states, free and without sign-up.'],
 ];
@@ -534,17 +538,17 @@ export const guideSupplierManagement = {
   lang: 'en',
   path: '/guides/supplier-management/',
   altPath: '/de/ratgeber/lieferantenmanagement/',
-  title: 'Supplier Management: A Practical Guide for SMBs | NexSource',
+  title: 'Supplier Management Process: 7 Steps for SMBs | NexSource',
   description:
-    'Supplier management in seven phases: demand, sourcing, qualification, onboarding, evaluation and development — with metrics and the common mistakes.',
-  keywords: 'supplier management, supplier relationship management, supplier lifecycle, vendor management process',
+    'The supplier management process in 7 steps: demand, sourcing, qualification, onboarding, execution, evaluation and development — with metrics and pitfalls.',
+  keywords: 'supplier management process, supplier management system process, supplier management steps, supplier lifecycle, vendor management process',
   crumbs: [['/guides/', 'Guides'], ['/guides/supplier-management/', 'Supplier management']],
   ogType: 'article',
   schema: [
     faqSchema(faqG),
     {
       '@type': 'Article',
-      headline: 'Supplier management: a practical guide for SMBs',
+      headline: 'The supplier management process: 7 steps for SMBs',
       datePublished: '2026-09-02',
       dateModified: '2026-09-02',
       inLanguage: 'en',
@@ -556,14 +560,14 @@ export const guideSupplierManagement = {
   body: `
 ${hero({
   lang: 'en',
-  eyebrow: 'Guide · about 8 min read',
-  h1: 'Supplier management: a practical guide for SMBs',
+  eyebrow: 'Guide · 8 min read · Updated September 2026',
+  h1: 'The supplier management process: 7 steps for SMBs',
   lead: 'The complete supplier lifecycle in seven phases — with clear ownership, the metrics that actually say something, and the mistakes mid-sized companies make most often.',
 })}
 ${prose(`
 ${answerBox('<strong>In short:</strong> Supplier management is the systematic steering of every supplier relationship across its lifecycle. For SMBs it is rarely about buying power and almost always about three things: security of supply, being able to evidence your process to customers and auditors, and not depending on one person’s memory.')}
 
-<h2>The seven phases</h2>
+<h2>The supplier management process in seven steps</h2>
 <h3>1. Understand the demand</h3>
 <p>Before sourcing, get clear on what is needed, in what quantity, to what specification, at what cadence. A surprising share of bad supplier decisions originate here rather than in the selection.</p>
 <h3>2. Source suppliers</h3>

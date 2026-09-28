@@ -127,12 +127,25 @@ im Impressum ist eine funktionierende Adresse rechtlich vorgeschrieben.
 
 ---
 
-## 7. Kostenlose Tools (Link-Magnete)
+## 7. Trial-Links und www-Weiterleitung
+
+- **Alle „Kostenlos testen"-Buttons zeigen auf `app.getnexsource.com/register`**, alle
+  „Anmelden"-Links auf `/login`. Die App-Startseite leitet anonyme Besucher auf den
+  Login („Willkommen zurück") — der falsche erste Bildschirm für jemanden, der testen
+  will. Im Generator steuert das die Konstante `APP` in `tools/layout.mjs`.
+- **www → ohne www:** Jede Seite hat im `<head>` eine kleine Script-Weiterleitung, bis
+  die 301-Weiterleitung in Amplify eingerichtet ist. Danach kann sie bleiben (schadet
+  nicht) oder raus.
+
+## 8. Kostenlose Tools (Link-Magnete)
 
 | Seite | Was sie tut |
 | --- | --- |
 | `/de/ust-idnr-pruefen/`, `/vat-number-validator/` | Format- und Prüfziffernprüfung für alle EU-Staaten, vollständig offline im Browser (`vat.js`) |
 | `/de/lieferantenbewertung/`, `/supplier-evaluation/` | Gewichteter Bewertungsrechner mit CSV-Export (`tool-ui.js`) |
+| `/de/lieferantenauswahl/` | Nutzwertanalyse: bis zu 3 Anbieter vergleichen, CSV-Export (`tool-ui.js`) |
+| `/de/lieferantendatenbank/` | Excel-/CSV-Vorlage mit 32 Spalten (`downloads/lieferantendatenbank-vorlage.csv`) |
+| `/de/ratgeber/lieferantenaudit-checkliste/` | Druckbare Checkliste (Druck-Button + Print-Stylesheet in `content.css`) |
 
 Beide bewusst ohne Anmeldung — sie sind der Grund, warum jemand die Seite
 verlinkt. Aktiv anbieten: in Einkaufs-/QM-Foren, LinkedIn-Gruppen, bei

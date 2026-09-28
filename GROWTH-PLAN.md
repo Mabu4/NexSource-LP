@@ -95,6 +95,19 @@ verlinkt werden. Umgesetzt:
 
 ---
 
+## Update 28.09.2026 (erste Search-Console-Daten)
+
+- 4 Wochen: 4.203 Impressionen, 4 Klicks (fast nur Marke), Ø Position ~60.
+- **Trial-Hürden beseitigt:** Test ohne Kreditkarte; Trial-Buttons führen direkt zur
+  Registrierung statt zum Login.
+- **Sanktionsprüfung repariert:** Der tägliche Abgleich hatte in Produktion nie
+  funktioniert (OFAC-Server scheitert am TLS-Handshake von Cloudflare aus). Jetzt: OFAC über
+  die US Consolidated Screening List, plus EU- und UN-Liste — ~80.000 Namen.
+- **Neue Seiten nach Datenlage:** Lieferanten finden, Lieferantenauswahl (+ Rechner),
+  Lieferantendatenbank (+ Vorlage), Lieferantenentwicklung, Über uns; englische Seiten
+  auf „Europe" und „supplier management process" ausgerichtet.
+- **Offen (du):** 301 www → ohne www in Amplify; Portale eintragen (`PORTAL-TEXTE.md`).
+
 ## 3. Technisches SEO — Status
 
 | Punkt | Status |
