@@ -27,6 +27,12 @@ function article(page) {
 /* ---------------- Hub ---------------- */
 const POSTS = [
   [
+    '/de/lieferanten-finden/',
+    'Leitfaden',
+    'Lieferanten finden: 7 Wege im Vergleich',
+    'Verzeichnisse, Messen, Verbände, Websuche, Marktplätze und KI-Lieferantensuche — und wie Sie Treffer vor der ersten Anfrage prüfen.',
+  ],
+  [
     '/de/ratgeber/lieferantenmanagement/',
     'Leitfaden',
     'Lieferantenmanagement: Leitfaden für den Mittelstand',

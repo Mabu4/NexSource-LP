@@ -106,6 +106,18 @@
 .prose a:hover {
   color: var(--accent-hover);
 }
+/* Buttons inside prose keep their button look: the generic prose link rule
+   (accent colour + underline) would otherwise paint the label in the same
+   colour as the primary button background. Labels may wrap on phones. */
+.prose a.btn {
+  text-decoration: none;
+  white-space: normal;
+  text-align: center;
+}
+.prose a.btn-primary,
+.prose a.btn-primary:hover {
+  color: #fff;
+}
 .prose ul,
 .prose ol {
   margin: 0 0 1.25rem;

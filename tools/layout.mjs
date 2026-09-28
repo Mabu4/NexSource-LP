@@ -75,6 +75,7 @@ const FOOTER = {
       ['/de/demo/', 'Demo anfragen'],
     ],
     solutions: [
+      ['/de/lieferanten-finden/', 'Lieferanten finden'],
       ['/de/lieferantenmanagement-software/', 'Lieferantenmanagement-Software'],
       ['/de/einkaufssoftware-mittelstand/', 'Einkaufssoftware Mittelstand'],
       ['/de/lieferantenportal/', 'Lieferantenportal'],

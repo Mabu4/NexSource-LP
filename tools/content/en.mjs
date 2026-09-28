@@ -16,24 +16,37 @@ export const supplierManagement = {
   lang: 'en',
   path: '/supplier-management-software/',
   altPath: '/de/lieferantenmanagement-software/',
-  title: 'Supplier Management Software for SMBs | NexSource',
+  title: 'Supplier Management Software for European SMBs | NexSource',
   description:
-    'Master data, certificates with expiry alerts, contracts, supplier evaluation, purchase orders with approval and a supplier portal. From €29/month.',
-  keywords: 'supplier management software, SRM software, supplier database, supplier relationship management, vendor management software SMB',
+    'Supplier management built for Europe: VIES VAT checks, EU sanctions screening, certificate alerts, orders and a supplier portal. EU-hosted, from €29/month.',
+  keywords: 'supplier management software, supplier management system, supplier management software Europe, SRM software, supplier information management software, vendor management software SMB',
   crumbs: [['/supplier-management-software/', 'Supplier management software']],
   schema: [softwareSchema('en'), faqSchema(faq1)],
   body: `
 ${hero({
   lang: 'en',
-  eyebrow: 'Supplier management software',
-  h1: 'Supplier management software built for mid-sized teams',
-  lead: 'Every supplier, contract, certificate, evaluation and purchase order in one place — instead of five spreadsheets and three inboxes. Live in minutes, from €29/month, unlimited users.',
+  eyebrow: 'Supplier management software for Europe',
+  h1: 'Supplier management software built for European SMBs',
+  lead: 'Every supplier, contract, certificate, evaluation and purchase order in one system — with the checks European companies actually need built in: EU VAT validation via VIES, EU sanctions screening and EU data hosting. Live in minutes, from €29/month, unlimited users.',
   meta: M,
 })}
 ${prose(`
-${answerBox('<strong>In short:</strong> NexSource is supplier management software for companies with 20–250 employees. It combines supplier master data, certificate expiry tracking, contracts, documents, supplier evaluation, purchase orders with an approval workflow and a supplier portal — with no implementation project.')}
+${answerBox('<strong>In short:</strong> NexSource is a supplier management system for European companies with 20–250 employees. It combines supplier master data, certificate expiry tracking, contracts, documents, supplier evaluation, purchase orders with an approval workflow and a supplier portal — plus EU VAT (VIES) and EU/UN/OFAC sanctions screening — with no implementation project.')}
+
+<h2 id="europe">Why "built for Europe" matters</h2>
+<p>Most supplier management tools are built for the US market and treat European requirements as add-ons. For a company buying from suppliers across the EU, three things are part of everyday onboarding, not extras:</p>
+${table(
+  ['European requirement', 'Typical US-built tool', 'NexSource'],
+  [
+    ['EU VAT ID validation (VIES)', '<span class="no">add-on or manual</span>', '<span class="yes">built into supplier discovery</span>'],
+    ['EU sanctions list screening', '<span class="no">often OFAC-only</span>', '<span class="yes">EU, UN and OFAC</span>'],
+    ['EU data residency, GDPR', 'varies, often US hosting', '<span class="yes">EU-hosted</span>'],
+    ['Pricing', 'per seat, often USD', '<span class="yes">EUR, unlimited users</span>'],
+  ]
+)}
 
 ${toc('en', [
+  ['europe', 'Why "built for Europe" matters'],
   ['problem', 'Why spreadsheets stop working'],
   ['capabilities', 'What the software has to cover'],
   ['modules', 'The NexSource modules'],
