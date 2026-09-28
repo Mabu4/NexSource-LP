@@ -88,11 +88,11 @@ number of suppliers. 14-day free trial, no credit card required.
 | Testversion | 14 Tage kostenlos, keine Kreditkarte |
 | Nutzer | unbegrenzt in allen Tarifen |
 | Hersteller | NexSource, Maximilian Budziat, Holzminden, Deutschland |
-| Website | https://getnexsource.com/de/ |
+| Website | https://www.getnexsource.com/de/ |
 | Kontakt | info@getnexsource.com |
 
 **Tipp für die Links:** Mit Kampagnen-Parametern verlinken, dann siehst du später, welches
-Portal Anmeldungen bringt, z. B. `https://getnexsource.com/de/?utm_source=omr&utm_medium=referral`.
+Portal Anmeldungen bringt, z. B. `https://www.getnexsource.com/de/?utm_source=omr&utm_medium=referral`.
 
 ## Screenshots, die die Portale verlangen (4–6 Stück)
 

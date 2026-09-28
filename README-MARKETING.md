@@ -73,9 +73,9 @@ Deshalb ist kein Consent-Banner erforderlich (TDDDG §25 / DSGVO).
 **Link-Vorlagen für Kampagnen:**
 
 ```text
-https://getnexsource.com/de/?utm_source=linkedin&utm_medium=social&utm_campaign=launch
-https://getnexsource.com/de/lieferantenmanagement-software/?utm_source=google&utm_medium=cpc&utm_campaign=lm-software
-https://getnexsource.com/de/ust-idnr-pruefen/?utm_source=omr&utm_medium=referral
+https://www.getnexsource.com/de/?utm_source=linkedin&utm_medium=social&utm_campaign=launch
+https://www.getnexsource.com/de/lieferantenmanagement-software/?utm_source=google&utm_medium=cpc&utm_campaign=lm-software
+https://www.getnexsource.com/de/ust-idnr-pruefen/?utm_source=omr&utm_medium=referral
 ```
 
 ---

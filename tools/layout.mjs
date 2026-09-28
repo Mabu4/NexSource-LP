@@ -1,7 +1,7 @@
 // Shared HTML shell for all generated pages.
 // Output is plain static HTML committed to the repo — hosting stays a static file server.
 
-export const SITE = 'https://getnexsource.com';
+export const SITE = 'https://www.getnexsource.com';
 // Trial CTAs go straight to registration: the app root redirects anonymous
 // visitors to the login form ("Willkommen zurück"), which is the wrong first
 // screen for someone who just clicked "start free trial".

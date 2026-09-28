@@ -146,9 +146,9 @@ export const demoDe = {
     {
       '@type': 'ContactPage',
       name: 'Demo anfragen',
-      url: 'https://getnexsource.com/de/demo/',
+      url: 'https://www.getnexsource.com/de/demo/',
       mainEntity: {
-        '@id': 'https://getnexsource.com/#organization',
+        '@id': 'https://www.getnexsource.com/#organization',
         email: MAIL,
       },
     },
