@@ -1,4 +1,4 @@
-import { faqSchema, faqHtml, relatedHtml, softwareSchema } from '../layout.mjs';
+import { faqSchema, faqHtml, relatedHtml, softwareSchema, SITE, APP } from '../layout.mjs';
 import { hero, prose, featureGrid, table, callout, toc, answerBox } from '../blocks.mjs';
 
 const M = ['14 Tage kostenlos', 'Keine Kreditkarte nötig', 'Unbegrenzte Nutzer', 'EU-Hosting, DSGVO-konform'];
@@ -124,6 +124,14 @@ const faq5 = [
     a: 'Nein. NexSource automatisiert und dokumentiert den Abgleich und liefert Ihnen die Nachweise. Die Bewertung eines Treffers, die Entscheidung über die Geschäftsbeziehung und die Frage nach Genehmigungspflichten bleiben Ihre unternehmerische und juristische Verantwortung. Bei einem Treffer sollten Sie fachkundigen Rat einholen.',
   },
   {
+    q: 'Ist die Sanktionslistenprüfung auf dieser Seite wirklich kostenlos?',
+    a: 'Ja. Sie können bis zu fünf Namen pro Tag ohne Anmeldung prüfen — gegen rund 80.000 Einträge der Sanktionslisten von EU, UN und OFAC, die täglich aktualisiert werden. Für die laufende Prüfung aller Ihrer Lieferanten gibt es NexSource: Dort wird jeder Lieferant beim Anlegen geprüft und danach täglich automatisch erneut abgeglichen.',
+  },
+  {
+    q: 'Werden meine Eingaben gespeichert?',
+    a: 'Nein. Der eingegebene Name wird ausschließlich für die Prüfung verwendet und nicht gespeichert. Zum Schutz vor Missbrauch zählen wir die Anfragen je Anschluss und Tag in pseudonymisierter Form (als nicht rückrechenbarer Hash); dieser Zähler wird nach spätestens zwei Tagen gelöscht.',
+  },
+  {
     q: 'Was passiert bei einem Treffer?',
     a: 'Ein Treffer ist zunächst ein Verdachtsmoment, kein Urteil — Namensgleichheiten kommen vor. NexSource weist den Treffer aus, sodass Sie ihn prüfen, dokumentieren und bewusst entscheiden können, statt ihn unbemerkt zu übergehen.',
   },
@@ -132,22 +140,52 @@ const faq5 = [
 export const sanktionslisten = {
   lang: 'de',
   path: '/de/sanktionslisten-pruefung/',
-  title: 'Sanktionslistenprüfung für Lieferanten (EU, OFAC, UN) | NexSource',
+  title: 'Sanktionsliste prüfen: kostenlos online (EU, UN, OFAC) | NexSource',
   description:
-    'Lieferanten automatisch gegen EU-, OFAC- und UN-Sanktionslisten prüfen — inklusive VIES-Validierung der USt-IdNr. und dokumentiertem Nachweis fürs Audit.',
-  keywords: 'Sanktionslistenprüfung, Sanktionslisten Software, EU Sanktionsliste prüfen, OFAC Prüfung, Embargoprüfung Lieferanten',
+    'Firmen und Personen kostenlos gegen die Sanktionslisten von EU, UN und OFAC prüfen — sofort, ohne Anmeldung. Für alle Lieferanten automatisch und täglich: NexSource.',
+  keywords: 'Sanktionsliste prüfen, Sanktionslistenprüfung online, Sanktionsprüfung kostenlos, EU Sanktionsliste prüfen, OFAC Prüfung, Sanktionslistenprüfung Software',
   crumbs: [['/de/sanktionslisten-pruefung/', 'Sanktionslistenprüfung']],
-  schema: [softwareSchema('de'), faqSchema(faq5)],
+  schema: [
+    softwareSchema('de'),
+    faqSchema(faq5),
+    {
+      '@type': 'WebApplication',
+      name: 'Kostenlose Sanktionslistenprüfung',
+      url: SITE + '/de/sanktionslisten-pruefung/',
+      applicationCategory: 'BusinessApplication',
+      operatingSystem: 'Web',
+      offers: { '@type': 'Offer', price: '0', priceCurrency: 'EUR' },
+      description: 'Namen kostenlos gegen die Sanktionslisten von EU, UN und OFAC prüfen.',
+    },
+  ],
+  extraScript: '\n    <script src="/tool-ui.js"></script>',
   body: `
 ${hero({
   lang: 'de',
-  eyebrow: 'Compliance',
-  h1: 'Sanktionslistenprüfung für Lieferanten — automatisch und dokumentiert',
-  lead: 'Jeder Lieferant, den Sie über NexSource finden oder anlegen, wird gegen EU-, OFAC- und UN-Sanktionslisten abgeglichen und die Umsatzsteuer-ID über das EU-VIES-System validiert. Das Ergebnis wird dokumentiert — nachweisbar im Audit.',
-  meta: M,
+  eyebrow: 'Kostenloses Tool',
+  h1: 'Sanktionslisten kostenlos prüfen — EU, UN und OFAC',
+  lead: 'Prüfen Sie einen Firmen- oder Personennamen sofort gegen rund 80.000 Einträge der Sanktionslisten von EU, UN und OFAC — kostenlos und ohne Anmeldung. Für alle Ihre Lieferanten automatisch und täglich: NexSource.',
+  ctaPrimary: { href: '#pruefen', label: 'Jetzt kostenlos prüfen', cta: 'tool-hero' },
+  meta: ['Ca. 80.000 Namen', 'Täglich aktualisiert', 'Ohne Anmeldung'],
 })}
+      <section class="section" id="pruefen">
+        <div class="container">
+          <form class="tool" id="sanctions-form" data-api="https://nexsource-api.budziat-max.workers.dev/api/public/sanctions-check">
+            <h2>Namen gegen Sanktionslisten prüfen</h2>
+            <p class="tool-sub">Firmen- oder Personenname, z. B. <code>Banco Nacional de Cuba</code>. Rechtsformzusätze wie GmbH oder Ltd. werden ignoriert.</p>
+            <div class="field">
+              <label for="sanctions-input">Name</label>
+              <input type="text" id="sanctions-input" name="name" autocomplete="off" spellcheck="false" minlength="3" maxlength="120" required placeholder="Firmen- oder Personenname" />
+              <span class="hint">Bis zu 5 kostenlose Prüfungen pro Tag. Der Name wird nur für die Prüfung verwendet und nicht gespeichert.</span>
+            </div>
+            <button type="submit" class="btn btn-primary">Prüfen</button>
+            <div class="tool-result" id="sanctions-result" hidden aria-live="polite"></div>
+            <p class="hint" style="margin-top:1rem;font-size:.8125rem;color:var(--text-soft)">Ergebnis eines automatischen Namensabgleichs, keine Rechtsberatung. Ein Treffer ist ein Verdacht, keine Bestätigung; kein Treffer schließt indirekte Beteiligungen gelisteter Personen nicht aus.</p>
+          </form>
+        </div>
+      </section>
 ${prose(`
-${answerBox('<strong>Kurz gesagt:</strong> Sanktionsrecht gilt in der EU für jedes Unternehmen, ohne Größengrenze. Wer Lieferanten nicht abgleicht, riskiert empfindliche Bußgelder und im Extremfall strafrechtliche Folgen. NexSource prüft automatisch bei jeder Lieferantensuche gegen EU-, OFAC- und UN-Listen und hält das Ergebnis fest.')}
+${answerBox('<strong>Kurz gesagt:</strong> Sanktionsrecht gilt in der EU für jedes Unternehmen, ohne Größengrenze. Wer Lieferanten nicht abgleicht, riskiert empfindliche Bußgelder und im Extremfall strafrechtliche Folgen. Einzelne Namen prüfen Sie oben kostenlos. In NexSource wird jeder Lieferant beim Anlegen gegen EU-, UN- und OFAC-Listen geprüft und danach täglich automatisch erneut abgeglichen — mit dokumentiertem Ergebnis.')}
 
 ${toc('de', [
   ['pflicht', 'Die Pflicht gilt auch für kleine Unternehmen'],
@@ -175,11 +213,12 @@ ${table(
 
 <h2 id="prozess">Wie die Prüfung in NexSource abläuft</h2>
 <ol>
-  <li><strong>Lieferant suchen oder anlegen</strong> — bei der KI-Lieferantensuche geschieht die Prüfung automatisch für jedes Suchergebnis.</li>
+  <li><strong>Lieferant suchen, anlegen oder importieren</strong> — die Prüfung läuft automatisch, bei der KI-Suche für jedes Suchergebnis, beim CSV-Import für jede Zeile.</li>
   <li><strong>Abgleich</strong> — Name und Unternehmensdaten werden gegen EU-, OFAC- und UN-Listen abgeglichen.</li>
   <li><strong>USt-IdNr.-Validierung</strong> — parallel wird die Umsatzsteuer-ID über VIES geprüft.</li>
   <li><strong>Trust-Score</strong> — die Signale werden zu einer Bewertung von 0–100 mit Risikoeinstufung und Onboarding-Empfehlung verdichtet.</li>
   <li><strong>Dokumentation</strong> — das Ergebnis bleibt am Lieferantendatensatz erhalten und ist im Audit vorzeigbar.</li>
+  <li><strong>Tägliche Überwachung</strong> — die Listen werden täglich aktualisiert und alle Lieferanten erneut abgeglichen. Ein neuer Treffer erscheint sofort am Lieferanten und kommt per E-Mail an Inhaber und Manager.</li>
 </ol>
 
 <h2 id="dokumentation">Warum Dokumentation wichtiger ist als die Prüfung selbst</h2>

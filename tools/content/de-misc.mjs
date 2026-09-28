@@ -19,7 +19,7 @@ const faqE = [
   },
   {
     q: 'Können wir unsere Excel-Daten übernehmen?',
-    a: 'Ja. Lieferanten lassen sich in NexSource anlegen und die vorhandenen Angaben übertragen. In der Praxis ist der pragmatischste Weg, mit den 20 wichtigsten Lieferanten zu starten und den Rest nach und nach zu ergänzen — nicht mit einer Migration aller Altdaten zu beginnen.',
+    a: 'Ja. Speichern Sie Ihre Excel-Liste als CSV und importieren Sie sie in einem Schritt — NexSource erkennt Spalten wie Firmenname, Adresse, USt-IdNr. oder Zahlungsziel automatisch, überspringt Dubletten und prüft jeden Lieferanten beim Import gegen die Sanktionslisten von EU, UN und OFAC.',
   },
   {
     q: 'Ist Excel nicht billiger?',
@@ -119,7 +119,7 @@ ${callout('<strong>Nicht eingerechnet</strong><p>Ein einziges Audit-Finding, ein
   <li><strong>Tag 1:</strong> Workspace anlegen, Team einladen — Nutzer sind unbegrenzt.</li>
   <li><strong>Tag 1–2:</strong> Die 20 Lieferanten mit dem größten Volumen erfassen, Zertifikate mit Ablaufdatum hinterlegen. Damit ist das größte Risiko abgedeckt.</li>
   <li><strong>Woche 2:</strong> Portal-Links an diese Lieferanten senden — ab jetzt pflegen sie ihre Daten selbst.</li>
-  <li><strong>Laufend:</strong> Jeder neue Lieferant entsteht direkt im System. Die Excel-Datei läuft aus, statt migriert zu werden.</li>
+  <li><strong>Laufend:</strong> Jeder neue Lieferant entsteht direkt im System. Den Bestand aus Excel übernehmen Sie per CSV-Import in einem Schritt.</li>
 </ol>
 <p>Genau dafür gibt es die 14 Tage kostenlos: Sie können den Schritt bis „Woche 2" vollständig testen, bevor Sie irgendetwas zahlen.</p>
 `)}

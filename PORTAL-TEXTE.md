@@ -10,8 +10,8 @@ Besucher, lange bevor die eigene Seite dort ankommt.
 3. **trusted.de** und **softwarevergleich.de**
 4. **G2** (g2.com) — für die englische Sichtbarkeit
 
-Alle Aussagen unten stimmen mit dem Produkt überein. Der Satz zur Sanktionslistenprüfung
-(EU, UN, OFAC) gilt, sobald der API-Deploy mit dem neuen Listen-Abgleich live ist.
+Alle Aussagen unten stimmen mit dem Produkt überein, sobald das Feature-Release vom
+28.09.2026 (Import, tägliche Überwachung, Ablauf-Mails, Test ohne Checkout) deployed ist.
 
 ---
 
@@ -64,15 +64,16 @@ number of suppliers. 14-day free trial, no credit card required.
 ## Funktionen (für Feature-Checklisten)
 
 - Zentrale Lieferantendatenbank / digitale Lieferantenakte
-- Zertifikats- und Vertragsmanagement mit Ablaufwarnung (90/60/30 Tage)
+- Import bestehender Lieferantenlisten aus Excel/CSV (Spalten werden automatisch erkannt)
+- Zertifikats- und Vertragsmanagement mit Ablauf-Erinnerung per E-Mail (90/60/30 Tage, ab Pro)
 - Dokumentenablage je Lieferant
 - Lieferantenbewertung (Scorecard, 5 Kriterien, Gesamtscore)
 - Bestellungen mit automatischer Nummernvergabe und Freigabeworkflow
 - Statushistorie von Anlage bis Zahlung, Zahlungsziele je Lieferant
 - Lieferantenportal ohne Account, Änderungen mit Freigabe
 - KI-Lieferantensuche mit Trust-Score
-- USt-IdNr.-Prüfung über EU-VIES
-- Sanktionslistenprüfung (EU, UN, OFAC)
+- USt-IdNr.-Prüfung über EU-VIES für jeden Lieferanten
+- Sanktionslistenprüfung (EU, UN, OFAC) beim Anlegen und täglich automatisch für alle Lieferanten
 - Rollen: Owner, Manager, Member — unbegrenzte Nutzer
 
 ## Stammdaten fürs Formular
@@ -111,8 +112,10 @@ Mit realistischen, aber erfundenen Beispieldaten — keine echten Kunden- oder L
 
 Es gibt zwei echte Registrierungen (3. August, 14. September), die beide vor dem Plan
 bzw. im Checkout ausgestiegen sind — genau an der Stelle, die heute behoben wurde. Die
-Person vom 14. September hat sogar ihre E-Mail bestätigt. Eine kurze, persönliche Mail
-als Service-Hinweis zu ihrem bestehenden Konto:
+Person vom 14. September hat sogar ihre E-Mail bestätigt. Mit der Migration 0017 bekommen
+beide Konten beim Deploy einen frischen 14-Tage-Test. Die automatischen Onboarding-Mails
+lassen solche Alt-Konten bewusst aus — schicke die Mail deshalb **direkt nach dem Deploy**
+persönlich, damit die 14 Tage nicht ungenutzt verstreichen:
 
 > **Betreff:** Ihr NexSource-Zugang — jetzt ohne Kreditkarte
 >
@@ -122,8 +125,9 @@ als Service-Hinweis zu ihrem bestehenden Konto:
 > Produkt gekommen. Das lag sehr wahrscheinlich an uns: Für den Test wurde bisher eine
 > Kreditkarte verlangt.
 >
-> Das haben wir geändert. Wenn Sie sich unter https://app.getnexsource.com/login anmelden,
-> können Sie die 14 Tage jetzt ohne Karte starten.
+> Das haben wir geändert: Wenn Sie sich unter https://app.getnexsource.com/login anmelden,
+> landen Sie direkt im Produkt — 14 Tage kostenlos, ohne Karte und ohne Planwahl. Ihre
+> bestehende Lieferantenliste können Sie als Excel/CSV in einem Schritt importieren.
 >
 > Und falls etwas anderes nicht gepasst hat: Ein Satz als Antwort auf diese Mail hilft mir
 > sehr — ich lese jede selbst.

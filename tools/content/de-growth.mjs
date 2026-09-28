@@ -301,7 +301,7 @@ ${table(
     ['Bestellungen am Lieferanten', '<span class="no">separate Liste</span>', '<span class="yes">integriert</span>'],
   ]
 )}
-<p>In <a href="/de/lieferantenmanagement-software/">NexSource</a> ist jeder Lieferant eine solche Akte — inklusive USt-IdNr.-Prüfung über VIES, Zertifikaten mit Fristenwarnung, Bewertung und Bestellhistorie. Wer von der Vorlage umsteigt, legt am besten zuerst die 20 wichtigsten Lieferanten an — das ist ein Nachmittag, kein Migrationsprojekt.</p>
+<p>In <a href="/de/lieferantenmanagement-software/">NexSource</a> ist jeder Lieferant eine solche Akte — inklusive USt-IdNr.-Prüfung über VIES, Zertifikaten mit Fristenwarnung, Bewertung und Bestellhistorie. Die Vorlage lässt sich direkt importieren: Datei hochladen, NexSource erkennt die Spalten und prüft jeden Lieferanten beim Import gegen die Sanktionslisten.</p>
 
 <h2 id="pflege">Daten dauerhaft aktuell halten</h2>
 <p>Jede Lieferantendatenbank veraltet — Ansprechpartner wechseln, Firmierungen ändern sich, Zertifikate laufen aus. Drei Maßnahmen halten den Verfall auf:</p>

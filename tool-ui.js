@@ -258,3 +258,74 @@
     });
   }
 })();
+
+/* ---------------- Free sanctions check (calls the NexSource API) ---------------- */
+(function () {
+  'use strict';
+  var form = document.getElementById('sanctions-form');
+  if (!form) return;
+  var input = document.getElementById('sanctions-input');
+  var out = document.getElementById('sanctions-result');
+  var button = form.querySelector('button[type=submit]');
+  var local = /^(localhost|127\.0\.0\.1)$/.test(location.hostname);
+  var API = local ? 'http://localhost:8799/api/public/sanctions-check' : form.getAttribute('data-api');
+  var TRIAL = 'https://app.getnexsource.com/register';
+  var LISTS = { ofac: 'OFAC (USA)', eu: 'EU', un: 'UN' };
+
+  function esc(s) {
+    return String(s).replace(/[&<>"']/g, function (c) {
+      return { '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c];
+    });
+  }
+  function show(state, html) {
+    out.hidden = false;
+    out.setAttribute('data-state', state);
+    out.innerHTML = html;
+  }
+  var cta =
+    '<p style="margin-top:.9rem"><a class="btn btn-primary" href="' + TRIAL + '" data-cta="trial-sanctions-tool">Alle Lieferanten automatisch und täglich prüfen — 14 Tage kostenlos</a></p>';
+
+  form.addEventListener('submit', function (e) {
+    e.preventDefault();
+    var name = input.value.trim();
+    if (name.length < 3) {
+      show('warn', '<h3>Bitte mindestens 3 Zeichen eingeben.</h3>');
+      return;
+    }
+    button.disabled = true;
+    show('', '<p class="muted">Prüfe gegen rund 80.000 Einträge …</p>');
+    fetch(API, { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify({ name: name }) })
+      .then(function (r) {
+        return r.json().then(function (j) {
+          return { status: r.status, body: j };
+        });
+      })
+      .then(function (res) {
+        if (res.status === 429) {
+          show('warn', '<h3>Tageslimit erreicht</h3><p>Sie haben heute bereits 5 kostenlose Prüfungen genutzt. In NexSource werden alle Ihre Lieferanten ohne Limit geprüft und täglich neu abgeglichen.</p>' + cta);
+          return;
+        }
+        var d = res.body && res.body.data;
+        if (!d) throw new Error('bad response');
+        var lists = (d.checkedAgainst || []).map(function (s) { return LISTS[s] || s; }).join(', ');
+        var stand = d.listBuiltAt ? new Date(d.listBuiltAt).toLocaleDateString('de-DE') : '';
+        var meta = '<p class="muted" style="margin-top:.6rem;font-size:.8125rem">Geprüft gegen: ' + esc(lists) + (stand ? ' · Listenstand ' + esc(stand) : '') + ' · noch ' + d.remaining + ' von ' + d.limit + ' kostenlosen Prüfungen heute</p>';
+        if (d.status === 'clear') {
+          show('ok', '<h3>Kein Treffer für „' + esc(name) + '“</h3><p>Der Name steht auf keiner der geprüften Sanktionslisten. Das schließt indirekte Beteiligungen gelisteter Personen nicht aus — bei Geschäftspartnern aus Risikoregionen lohnt ein Blick auf die Eigentümerstruktur.</p>' + meta + cta);
+        } else if (d.status === 'hit') {
+          var items = d.hits.map(function (h) {
+            return '<li><strong>' + esc(h.matchedName) + '</strong> — ' + esc(LISTS[h.source] || h.source) + ', Programm ' + esc(h.program) + '</li>';
+          }).join('');
+          show('bad', '<h3>Möglicher Treffer für „' + esc(name) + '“</h3><ul>' + items + '</ul><p style="margin-top:.6rem">Ein Treffer ist ein Verdacht, keine Bestätigung — Namensgleichheiten kommen vor. Prüfen Sie die Identität (Sitz, Registernummer, Eigentümer) und geben Sie bis zur Klärung keine Zahlungen oder Lieferungen frei. Bei einem bestätigten Treffer sollten Sie fachkundigen Rat einholen.</p>' + meta + cta);
+        } else {
+          show('warn', '<h3>Prüfung gerade nicht möglich</h3><p>Die Sanktionslisten werden gerade aktualisiert. Bitte versuchen Sie es in ein paar Minuten erneut.</p>');
+        }
+      })
+      .catch(function () {
+        show('warn', '<h3>Prüfung gerade nicht möglich</h3><p>Die Verbindung zum Prüfdienst ist fehlgeschlagen. Bitte versuchen Sie es in ein paar Minuten erneut.</p>');
+      })
+      .then(function () {
+        button.disabled = false;
+      });
+  });
+})();
