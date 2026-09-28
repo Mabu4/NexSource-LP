@@ -133,9 +133,10 @@ im Impressum ist eine funktionierende Adresse rechtlich vorgeschrieben.
   „Anmelden"-Links auf `/login`. Die App-Startseite leitet anonyme Besucher auf den
   Login („Willkommen zurück") — der falsche erste Bildschirm für jemanden, der testen
   will. Im Generator steuert das die Konstante `APP` in `tools/layout.mjs`.
-- **www → ohne www:** Jede Seite hat im `<head>` eine kleine Script-Weiterleitung, bis
-  die 301-Weiterleitung in Amplify eingerichtet ist. Danach kann sie bleiben (schadet
-  nicht) oder raus.
+- **Keine Weiterleitung per Script.** Eine clientseitige www-Weiterleitung hat zusammen mit
+  der serverseitigen Weiterleitung (ohne www → www) eine Endlosschleife erzeugt und wurde
+  entfernt. Die Weiterleitung zwischen www und ohne www gehört ausschließlich in Amplify —
+  und muss zu den Canonical-URLs passen.
 
 ## 8. Kostenlose Tools (Link-Magnete)
 

@@ -8,11 +8,6 @@ export const SITE = 'https://getnexsource.com';
 export const APP = 'https://app.getnexsource.com/register';
 export const APP_LOGIN = 'https://app.getnexsource.com/login';
 
-// Until www.getnexsource.com 301-redirects at the hosting level, send it to
-// the apex from the client. Search Console showed every German page indexed
-// under www while the canonicals point to the apex, splitting the signals.
-export const WWW_REDIRECT =
-  "<script>if(location.hostname==='www.getnexsource.com')location.replace('https://getnexsource.com'+location.pathname+location.search+location.hash)</script>";
 
 const T = {
   de: {
@@ -369,7 +364,6 @@ export function render(page) {
 <html lang="${lang}">
   <head>
     <meta charset="utf-8" />
-    ${WWW_REDIRECT}
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>${esc(page.title)}</title>
     <meta name="description" content="${esc(page.description)}" />${page.keywords ? `\n    <meta name="keywords" content="${esc(page.keywords)}" />` : ''}${page.noindex ? '\n    <meta name="robots" content="noindex,follow" />' : ''}
